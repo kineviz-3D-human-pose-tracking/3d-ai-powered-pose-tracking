@@ -1,5 +1,13 @@
 # Socket server
 
+before you can run, you have to run
+
+       # npm install
+       
+       # npm install socket.io
+       
+       # npm install express
+
 This server listens on port 4444
 
 streamer 1 : https://observablehq.com/d/06feabd453f9a0d1 (Barbora)
