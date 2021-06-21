@@ -1,0 +1,35 @@
+{
+  "name": "socket-server",
+  "version": "1.0.0",
+  "description": "Socket server for users collaboration on web applications",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LyonDataViz/socket-server.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git push heroku master",
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=12.13.1 <13"
+  },
+  "devDependencies": {
+    "heroku": "^7.35.1",
+    "husky": "^4.0.10",
+    "prettier": "~1.19.1",
+    "pretty-quick": "~2.0.1"
+  },
+  "homepage": "https://github.com/LyonDataViz/socket-server#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

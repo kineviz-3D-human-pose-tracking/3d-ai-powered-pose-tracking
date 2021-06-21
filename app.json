@@ -1,0 +1,6 @@
+{
+  "name": "Node.js Socket.io server",
+  "description": "Allows users to collaborate on the same application state",
+  "repository": "https://github.com/LyonDataViz/socket-server",
+  "keywords": ["node", "websocket", "socket.io"]
+}
