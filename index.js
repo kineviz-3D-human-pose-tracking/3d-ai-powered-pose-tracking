@@ -14,10 +14,10 @@ app.get('/', (req, res) => {
 
 
 function onConnection(socket) {
-  socket.on('chat', data => {
+  socket.on('skeleton', data => {
     console.log(counter + " "+ `Message received: ${data}`)
     counter++
-    socket.broadcast.emit('chat', data)  
+    socket.broadcast.emit('skeleton', data)  
     ///will send the message to all the other clients except the newly created connection
   })
 }
