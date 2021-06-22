@@ -1,6 +1,6 @@
 # Socket server
 
-before you can run, you have to run
+Install npm before running index.jx:
 
        # npm install
        
