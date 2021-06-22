@@ -10,11 +10,11 @@ Install npm before running index.jx:
 
 This server listens on port 4444
 
-streamer 1 : https://observablehq.com/d/06feabd453f9a0d1 (Barbora)
+streamer 1 : https://observablehq.com/@barbora838/streamer-1 (Barbora)
 
-streamer 2 : https://observablehq.com/d/e030a1876f3f41b7 (Marisa)
+streamer 2 : https://observablehq.com/@barbora838/streamer-2 (Marisa)
 
-receiver : https://observablehq.com/d/e7a662511f2dcd01#textarea
+receiver : https://observablehq.com/@barbora838/receiver#serverUrl
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
