@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const http = require('http').Server(app)
 const io = require('socket.io')(http)
-const port = process.env.PORT || 4444
+const port = process.env.PORT || 8888
 var counter = 1
 
 // TODO: add a public page that redirects to the GitHub repository
