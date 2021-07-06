@@ -24,7 +24,8 @@
     "heroku": "^7.35.1",
     "husky": "^4.0.10",
     "prettier": "~1.19.1",
-    "pretty-quick": "~2.0.1"
+    "pretty-quick": "~2.0.1",
+    "ws": "3.3.2"
   },
   "homepage": "https://github.com/LyonDataViz/socket-server#readme",
   "husky": {
