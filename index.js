@@ -23,7 +23,7 @@ const httpsServer = https
 const io = require("socket.io")(httpsServer);
 
 app.get("/", (req, res) => {
-  res.send("<h1>Marisa and Barbora Port 3333</h1>");
+  res.send("<h1>Server is listening</h1>");
 });
 
 var counter = 1;
