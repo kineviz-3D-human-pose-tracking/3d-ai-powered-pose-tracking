@@ -20,6 +20,7 @@ const httpsServer = https
   )
   .listen(port, () => console.log("listening on port " + port));
 
+// Socket.io server listens to our httpsServer
 const io = require("socket.io")(httpsServer);
 
 app.get("/", (req, res) => {
@@ -28,6 +29,8 @@ app.get("/", (req, res) => {
 
 var counter = 1;
 
+// informs when user gets connected and disconnected
+// broadcast and emits skeleton data
 function onConnection(socket) {
   socket.on("skeleton", data => {
     console.log("A user connected");
