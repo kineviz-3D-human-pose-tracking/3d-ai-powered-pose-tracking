@@ -36,19 +36,9 @@ Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates int
 ## Server
 
 
+**socket.io**
 
-Install npm before running index.jx:
-
-       # npm install
-       
-       # npm install socket.io
-       
-       # npm install express
-
-
-## socket.io
-
-Please see the documentation [here](https://socket.io/docs/v4/index.html)
+Please see the documentation for **socket.io** [here](https://socket.io/docs/v4/index.html)
 
 Socket.io enables real-time bidirectional event-based communication.
 
@@ -58,7 +48,26 @@ Socket.io enables real-time bidirectional event-based communication.
      * informs when user gets connected and disconnected
      * broadcast and emits skeleton data to the listening clients
 
-## How to Run it 
+## Installation
    
+   
+Install npm before running index.jx:
 
+       # npm install
+       
+       # npm install socket.io
+       
+       # npm install express
+       
 
+## How to Run it 
+
+The following example attaches socket.io to a plain Node.JS HTTP server listening on port 9000.
+
+Simply run 
+
+    #  node index.js
+    
+to start the server in the terminal and you should get confirmation response 
+
+    # *listening on port 9000* 
