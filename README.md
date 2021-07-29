@@ -1,4 +1,4 @@
-# Socket server
+# kineviz-3D-human-pose-tracking
 
 Install npm before running index.jx:
 
@@ -10,11 +10,11 @@ Install npm before running index.jx:
 
 This server listens on port 9000
 
-streamer 1 : https://observablehq.com/@mt-cs/posenet-webcam-1
+webcam 1 : https://observablehq.com/@mt-cs/posenet-webcam-1
 
-streamer 2 : https://observablehq.com/d/d2b73e086b4f386f
+webcam 2 : https://observablehq.com/d/d2b73e086b4f386f
 
-receiver :   https://observablehq.com/d/d223739e174ed6fc (average)
+receiver 3D :   https://observablehq.com/d/d223739e174ed6fc (average)
              https://observablehq.com/d/74978e5d2497a671 (3D)
 
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
