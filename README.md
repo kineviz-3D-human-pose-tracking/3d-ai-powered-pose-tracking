@@ -7,7 +7,7 @@ Try out the [Live Demo](https://storage.googleapis.com/tfjs-models/demos/pose-de
 
 The main **stretch goal** of this project is to create 3D pose and eventually get the 3D pose using [GraphXR](https://www.kineviz.com/visualization) to visualize the data. GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
 
-![picture](orthodonal_pic.png)
+![picture](photos/orthodonal_pic.png)
 
 By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
 
@@ -16,7 +16,7 @@ Traditional 3D motion capture systems require a sophisticated setup and are very
 
 ## Architectural Diagram
 
-![picture](diagram.png)
+![picture](photos/diagram.png)
 
 
 ## Clients on ObservableHQ
