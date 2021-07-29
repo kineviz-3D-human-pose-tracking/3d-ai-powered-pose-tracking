@@ -23,14 +23,20 @@ Socket server for users collaboration on web applications.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## Versions
+## socket.io
 
-No version deployed for now.
+Socket.IO enables real-time bidirectional event-based communication. It consists of:
 
-See [CHANGELOG.md](./CHANGELOG.md) for more details.
+       a Node.js server (this repository)
 
-## Credits
+## Clients 
 
-Project developed for the [LIRIS M2i project](https://projet.liris.cnrs.fr/mi2/)
-by Sylvain Lesage with Celia Gremillet, Philippe Rivière, Gabin Rolland,
-Aurélien Tabard and Romain Vuillemot.
+Clients are running on ObservableHQ 
+links:
+
+       webcam 1 : https://observablehq.com/@mt-cs/posenet-webcam-1
+
+       webcam 2 : https://observablehq.com/d/d2b73e086b4f386f
+
+       receiver 3D :   https://observablehq.com/d/d223739e174ed6fc (average)
+                    https://observablehq.com/d/74978e5d2497a671 (3D)
