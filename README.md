@@ -38,13 +38,17 @@ Install npm before running index.jx:
        
        # npm install express
 
-This server listens on port 9000
-
 
 ## socket.io
 
-Socket.IO enables real-time bidirectional event-based communication.
+Please see the documentation [here](https://socket.io/docs/v4/index.html)
 
-   * a index.js server (this repository)
+Socket.io enables real-time bidirectional event-based communication.
+
+-  **index.js** server (this repository)
+     * this server listens on port *9000*
+     * informs when user gets connected and disconnected
+     * broadcast and emits skeleton data
+   
 
 
