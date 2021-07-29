@@ -6,6 +6,8 @@ The main stretch of this project is to create 3D pose and eventually get the 3D 
 
 By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
 
+![picture](/Users/barbora/Desktop/orthodonal_pic)
+
 Traditional 3D motion capture systems require a sophisticated setup and are very costly. This system makes 3D pose capture accessible to much more people.
 
        
@@ -15,11 +17,11 @@ ObservableHQ that introduces the notebook paradigm to JavaScript projects. (for 
 
 Links:
 
-   [webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)
+  * [webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)
 
-   [webcam 2](https://observablehq.com/d/d2b73e086b4f386f)
+  * [webcam 2](https://observablehq.com/d/d2b73e086b4f386f)
 
-   [receiver 3D](https://observablehq.com/d/74978e5d2497a671)
+  * [receiver 3D](https://observablehq.com/d/74978e5d2497a671)
     
 
 
