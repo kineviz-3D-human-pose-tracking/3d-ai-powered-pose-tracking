@@ -20,10 +20,8 @@ Socket.IO enables real-time bidirectional event-based communication. It consists
 ## Clients on ObservableHQ
 
 Links:
+[link](https://observablehq.com/@mt-cs/posenet-webcam-1).
 
-       [link](https://observablehq.com/@mt-cs/posenet-webcam-1)
+[webcam 2](https://observablehq.com/d/d2b73e086b4f386f).
 
-       webcam 2 : https://observablehq.com/d/d2b73e086b4f386f
-
-       receiver 3D :   https://observablehq.com/d/d223739e174ed6fc (average)
-                    https://observablehq.com/d/74978e5d2497a671 (3D)
+[receiver 3D](https://observablehq.com/d/74978e5d2497a671).
