@@ -53,11 +53,11 @@ Socket.io enables real-time bidirectional event-based communication.
    
 Install npm before running index.jx:
 
-       # npm install
+       $ npm install
        
-       # npm install socket.io
+       $ npm install socket.io
        
-       # npm install express
+       $ npm install express
        
 
 ## How to Run it 
@@ -66,7 +66,7 @@ The following example attaches socket.io to a plain Node.JS HTTP server listenin
 
 Simply run 
 
-    #  node index.js
+        $  node index.js
     
 to start the server in the terminal and you should get confirmation response 
 
@@ -79,10 +79,10 @@ Mocha is a feature-rich JavaScript test framework running on [Node.js](https://n
 
 **Installation**
 
-    $ npm install --global mocha
+        $ npm install --global mocha
     
 **Then run tests with**
 
-    $ npm test
+        $ npm test
     
 For more information about Mocha you can find [here](https://mochajs.org/)
