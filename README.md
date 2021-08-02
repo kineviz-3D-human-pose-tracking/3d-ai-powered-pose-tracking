@@ -7,7 +7,7 @@ Try out the [Live Demo](https://storage.googleapis.com/tfjs-models/demos/pose-de
 
 The main **stretch goal** of this project is to create 3D pose and eventually get the 3D pose using [GraphXR](https://www.kineviz.com/visualization) to visualize the data. GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
 
-![picture](photos/orthodonal_pic.png)
+![picture](photos/setup.png)
 
 By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
 
@@ -16,7 +16,7 @@ Traditional 3D motion capture systems require a sophisticated setup and are very
 
 ## Architectural Diagram
 
-![picture](photos/diagram.png)
+![picture](photos/architectural_diagram.png)
 
 
 ## Clients on ObservableHQ
@@ -71,3 +71,18 @@ Simply run
 to start the server in the terminal and you should get confirmation response 
 
    *listening on port 9000* 
+   
+   
+## How to Test
+
+Mocha is a feature-rich JavaScript test framework running on [Node.js](https://nodejs.org/en/) and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on [GitHub](https://github.com/mochajs/mocha).
+
+**Installation**
+
+    $ npm install --global mocha
+    
+**Then run tests with**
+
+    $ npm test
+    
+For more information about Mocha you can find [here](https://mochajs.org/)
