@@ -11,7 +11,7 @@ The main **stretch goal** of this project is to create 3D pose and eventually ge
 
 By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
 
-Traditional 3D motion capture systems require a sophisticated setup and are very costly. This system makes 3D pose capture accessible by much more people.
+Traditional 3D motion capture systems require a sophisticated setup and are very costly and can reduce computational power significantly. This system makes 3D pose capture accessible by much more people.
 
 
 ## Architectural Diagram
