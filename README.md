@@ -84,5 +84,6 @@ Mocha is a feature-rich JavaScript test framework running on [Node.js](https://n
 **Then run tests with**
 
         $ npm test
+        $ npm i supertest
     
 *More information about Mocha you can find [here](https://mochajs.org/)*
