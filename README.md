@@ -1,6 +1,27 @@
 
 # AI Powered 3D Human Pose Tracking and Analysis
 
+
+
+## Table of Contents
+  * [Description](#description)
+    * [Overview](#overview)  
+    * [Setup](#setup)
+    * [Architectural Diagram](#architectural-diagram)
+    * [Client Side](#client-side)
+    * [Server Side](#server-side)
+    * [Receiver](#receiver)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Demo](#demo)
+  * [Dependencies](#dependencies)
+  * [Credits](#credits)
+  * [Acknowledgments](#acknowledgments)
+  * [Contact](#contact)
+
+## Description
+
 This project uses Pose Detection API ([PoseNet](https://blog.tensorflow.org/2018/05/real-time-human-pose-estimation-in.html)/[MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. 
 
 Try out the [Live Demo](https://storage.googleapis.com/tfjs-models/demos/pose-detection/index.html?model=movenet) **Although impressive, the pose is still in 2D.** 
@@ -13,23 +34,18 @@ By positioning two webcams, pointed at orthogonal directions, we can combine the
 
 Traditional 3D motion capture systems require a sophisticated setup and are very costly and can reduce computational power significantly. This system makes 3D pose capture accessible by much more people.
 
-## Table of Contents
-  * [Architectural Diagram](#architectural-diagram)
-  * [Description](#description)
-    * [Dependencies](#dependencies)
-    * [Preparing the data](#preparing-the-data)
-    * [Demo](#demo)
-    * [Inference](#inference)
-  * [Citation](#citation)
-  * [Acknowledgments](#acknowledgments)
-  * [Contact](#contact)
+## Overview
+
+
+## Setup
+
 
 ## Architectural Diagram
 
 <img src="photos/architectural_diagram.png" width="700" height="600">
 
 
-## Clients on ObservableHQ
+## Client Side
 
 [ObservableHQ](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/) that introduces the notebook paradigm to JavaScript projects. (for those of you familiar with Jupyter notebooks, this is the equivalent with JavaScript instead of Python).
 
@@ -80,7 +96,7 @@ Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates int
 
 
     
-## Server
+## Server Side
 
 
 **socket.io**
@@ -95,7 +111,18 @@ Socket.io enables real-time bidirectional event-based communication.
      * informs when user gets connected and disconnected
      * broadcast and emits skeleton data to the listening clients
 
+## Receiver
+
 ## Installation
+
+        $ npm install --global mocha
+    
+**Then run tests with**
+
+        $ npm test
+        $ npm i supertest
+    
+*More information about Mocha you can find [here](https://mochajs.org/)*
    
    
 Install npm before running index.jx:
@@ -107,7 +134,9 @@ Install npm before running index.jx:
        $ npm install express
        
 
-## How to Run it 
+## Usage
+
+**How to Run it**
 
 The following example attaches socket.io to a plain Node.JS HTTP server listening on port 9000.
 
@@ -120,22 +149,17 @@ to start the server in the terminal and you should get confirmation response
    *listening on port 9000* 
    
    
-## How to Test
+## Tests
+
+**How to Test**
 
 Mocha is a feature-rich JavaScript test framework running on [Node.js](https://nodejs.org/en/) and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on [GitHub](https://github.com/mochajs/mocha).
 
-**Installation**
 
-        $ npm install --global mocha
-    
-**Then run tests with**
-
-        $ npm test
-        $ npm i supertest
-    
-*More information about Mocha you can find [here](https://mochajs.org/)*
+## Demo
 
 
+## Dependencies
 
 
 ---
