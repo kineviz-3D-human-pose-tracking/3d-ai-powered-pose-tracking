@@ -4,7 +4,7 @@
   "description": "Socket server for users collaboration on web applications",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LyonDataViz/socket-server.git"
+    "url": "https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio"
   },
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "pretty-quick": "~2.0.1",
     "ws": "3.3.2"
   },
-  "homepage": "https://github.com/LyonDataViz/socket-server#readme",
+  "homepage": "https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/",
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
