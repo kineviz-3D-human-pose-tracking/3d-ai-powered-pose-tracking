@@ -145,12 +145,8 @@ Mocha is a feature-rich JavaScript test framework running on [Node.js](https://n
 Developed for the [Kineviz Summer Project](https://kineviz.com/) by:
 * Marisa Tania
 * Barbora Novakova
-* Nikko Sacramento
-* Thom Lauret
 
 Sponsor: Weidong Yang
-
-Instructor: Mario Lim
 
 Code credits:
 * PoseNet: [Loren Riesenfeld](https://observablehq.com/@lorenries/estimating-pose-in-the-browser-with-posenet-and-tensorflow-)
@@ -159,13 +155,15 @@ Code credits:
 
 ## Acknowledgments
 
-We thank Nikko Sacramento for plotting the 3D skeleton in GraphXR,\
+We thank Weidong Yang and the Kineviz Team for our biweekly meetings,
+Nikko Sacramento for plotting the 3D skeleton in GraphXR,\
+Sean Li for debugging the cors issue,\
 Thom Lauret for the more roobust AWS server,\
 Professor Mario Lim for helpful discussions,\
-Alex for posting the blogpost,\
-Cynthia Yu and Andrew for being our models.
+Alex Law for posting the blogpost,\
+Cynthia Yu and Andrew Mollis for being our models.
 
 ## Contact
-The code of this repository was implemented by [Barbora Novakova](mailto:barunka838@gmail.com) and [Marisa Tania](mailto:mt.marisatania@gmail.com).
+The code of this repository was implemented by [Barbora Novakova](mailto:barunka838@gmail.com) and [Marisa Tania](mailto:mt.marisatania@gmail.com). Feel free to reach out!
 
 ---
