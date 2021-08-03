@@ -13,6 +13,16 @@ By positioning two webcams, pointed at orthogonal directions, we can combine the
 
 Traditional 3D motion capture systems require a sophisticated setup and are very costly and can reduce computational power significantly. This system makes 3D pose capture accessible by much more people.
 
+## Table of Contents
+  * [Architectural Diagram](#architectural-diagram)
+  * [Description](#description)
+    * [Dependencies](#dependencies)
+    * [Preparing the data](#preparing-the-data)
+    * [Demo](#demo)
+    * [Inference](#inference)
+  * [Citation](#citation)
+  * [Acknowledgments](#acknowledgments)
+  * [Contact](#contact)
 
 ## Architectural Diagram
 
