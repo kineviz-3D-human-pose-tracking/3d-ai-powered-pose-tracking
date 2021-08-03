@@ -5,11 +5,12 @@
 [[Webcam 2](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/620/0983.pdf)]
 [[Receiver](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/621/0983-supp_no_header_compressed.pdf)]
 
-![Examples](./images/expose.png)
+![Examples](![comparison](https://user-images.githubusercontent.com/60201466/128093139-cd217f98-8c00-4417-8eae-a1a726c997d7.png)
 
 | Webcam 1 | Webcam 1 MoveNet | Webcam 2 MoveNet
 | --- | --- | --- | 
 |  [![Webcam1](https://img.youtube.com/vi/a-sVItuoPek/0.jpg)](https://www.youtube.com/watch?v=a-sVItuoPek) | [![Webcam2](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | [![Webcam3](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | 
+
 | Receiver 2D | GraphXR 3D |
 | --- | --- |
 |  [![Receiver](https://img.youtube.com/vi/a-sVItuoPek/0.jpg)](https://www.youtube.com/watch?v=a-sVItuoPek) | [![GraphXR](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | 
