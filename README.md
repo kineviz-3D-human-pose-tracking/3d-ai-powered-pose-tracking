@@ -62,7 +62,7 @@ Example output:
 
 
 
-**Links:**
+## Links to our client-side notebooks
 
 Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 ------------ | ------------- | -------------
