@@ -157,4 +157,15 @@ Code credits:
 * MoveNet: [Taras Novak](https://observablehq.com/@randomfractals/tensorflow-movenet-webcam)
 * Socket.io: [Sylvain Lesage](https://observablehq.com/@severo/hello-socket-io)
 
+## Acknowledgments
+
+We thank Nikko Sacramento for plotting the 3D skeleton in GraphXR,
+Thom Lauret for the more roobust AWS server,
+Professor Mario Lim for helpful discussions,
+Alex for posting the blogpost,
+Cynthia Yu and Andrew for being our models.
+
+## Contact
+The code of this repository was implemented by [Barbora Novakova](mailto:barunka838@gmail.com) and [Marisa Tania](mailto:mt.marisatania@gmail.com).
+
 ---
