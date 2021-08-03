@@ -7,7 +7,7 @@ Try out the [Live Demo](https://storage.googleapis.com/tfjs-models/demos/pose-de
 
 The main **stretch goal** of this project is to create 3D pose and eventually get the 3D pose using [GraphXR](https://www.kineviz.com/visualization) to visualize the data. GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
 
-[camera_setup.pdf](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/files/6922090/camera_setup.pdf)
+![camera_setup](https://user-images.githubusercontent.com/60201466/127975106-a2da261d-1176-49de-8147-e800477b9523.png)
 
 By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
 
