@@ -76,7 +76,7 @@ Example output:
 Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 ------------ | ------------- | -------------
 Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates into x, y, z
-[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1) | [Webcam 2](https://observablehq.com/d/d2b73e086b4f386f) | [Receiver 3D](https://observablehq.com/d/74978e5d2497a671)
+[Webcam 1](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1) | [Webcam 2](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-2) | [Receiver 3D](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-receiver)
 
 
     
