@@ -159,7 +159,7 @@ We thank Weidong Yang and the Kineviz Team for our biweekly meetings,
 Nikko Sacramento for plotting the 3D skeleton in GraphXR,\
 Sean Li for debugging the cors issue,\
 Thom Lauret for the more roobust AWS server,\
-Professor Mario Lim for helpful discussions,\
+Professor Mario Lim for helpful crossover network connection discussions,\
 Alex Law for posting the blogpost,\
 Cynthia Yu and Andrew Mollis for being our models.
 
