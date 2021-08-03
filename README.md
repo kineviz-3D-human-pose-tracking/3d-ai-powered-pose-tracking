@@ -132,7 +132,7 @@ Mocha is a feature-rich JavaScript test framework running on [Node.js](https://n
 
 ## Credits
 
-Developed for the [Kineviz Summer Project](https://kineviz.com/) by:\
+Developed for the [Kineviz Summer Project](https://kineviz.com/) by:
 * Marisa Tania
 * Barbora Novakova
 * Nikko Sacramento
@@ -142,7 +142,7 @@ Sponsor: Weidong Yang
 
 Instructor: Mario Lim
 
-Code credits:\
+Code credits:
 * PoseNet: [Loren Riesenfeld](https://observablehq.com/@lorenries/estimating-pose-in-the-browser-with-posenet-and-tensorflow-)
 * MoveNet: [Taras Novak](https://observablehq.com/@randomfractals/tensorflow-movenet-webcam)
 * Socket.io: [Sylvain Lesage](https://observablehq.com/@severo/hello-socket-io)
