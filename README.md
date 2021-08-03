@@ -31,7 +31,7 @@
 
 ## Description
 
-This project uses Pose Detection API ([PoseNet](https://blog.tensorflow.org/2018/05/real-time-human-pose-estimation-in.html)/[MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. 
+This project uses Pose Detection API [MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. 
 
 [MoveNet Model](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/movenet) is the latest pre-trained machine learning library [released](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html) by [TensorFlow](https://www.tensorflow.org) team, as part of a larger [Pose Detection](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection) [TensorFlow.js models](https://www.tensorflow.org/js/models) set. MoveNet is a convolutional neural network model that runs on RGB images and predicts human joint locations of a single person that runs faster than real-time ([30+ FPS](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)).
 
@@ -47,11 +47,11 @@ Try out the [Live Demo](https://storage.googleapis.com/tfjs-models/demos/pose-de
 The main **stretch goal** of this project is to create 3D pose and eventually get the 3D pose using [GraphXR](https://www.kineviz.com/visualization) to visualize the data. GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
 
 
-**How does MoveNet/PoseNet work**
+**How does MoveNet work**
 
 There are two steps:
 
-* First create a detector by chosing one of the models form SupportedModels, including MoveNet and PoseNet.
+* First create a detector by chosing one of the models form SupportedModels, including MoveNet.
     
     For example:
     
@@ -64,7 +64,7 @@ There are two steps:
 
 The returned poses list contains detected poses for each individual in the image. For single-person models, there will only be one element in the list. If the model cannot detect any poses, the list will be empty.
 
-For each pose, it contains a confidence score of the pose and an array of keypoints. PoseNet and MoveNet both return *17 keypoints.* 
+For each pose, it contains a confidence score of the pose and an array of keypoints. MoveNet both return *17 keypoints.* 
 
 <img src="photos/keypoints.png" width="300" height="300">
 
