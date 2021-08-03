@@ -71,7 +71,7 @@ Example output:
 
 
 
-## Links to our client-side notebooks
+## Links Client-side ObservableHQ Notebooks
 
 Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 ------------ | ------------- | -------------
