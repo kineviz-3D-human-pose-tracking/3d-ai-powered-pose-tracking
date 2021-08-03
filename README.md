@@ -192,6 +192,16 @@ to start the server in the terminal and you should get confirmation response
 
 ## Dependencies
 
+ 
+  * [tensorflow](https://www.tensorflow.org/)
+  * [node.js](https://nodejs.dev/)
+  * [npm](https://www.npmjs.com/)
+      * [cors](https://www.npmjs.com/package/cors)
+      * [express](https://www.npmjs.com/package/express)
+      * [socket.io](https://www.npmjs.com/package/socket.io)
+      * [husky](https://www.npmjs.com/package/husky)
+  * [mocha](https://mochajs.org/)
+
 
 ---
 
