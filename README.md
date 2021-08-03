@@ -1,5 +1,5 @@
-# AI Powered 3D Human Pose Tracking and Analysis
 
+# AI Powered 3D Human Pose Tracking and Analysis
 
 This project uses Pose Detection API ([PoseNet](https://blog.tensorflow.org/2018/05/real-time-human-pose-estimation-in.html)/[MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. 
 
@@ -7,8 +7,7 @@ Try out the [Live Demo](https://storage.googleapis.com/tfjs-models/demos/pose-de
 
 The main **stretch goal** of this project is to create 3D pose and eventually get the 3D pose using [GraphXR](https://www.kineviz.com/visualization) to visualize the data. GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
 
-![picture](photos/setup.png)
-
+[camera_setup.pdf](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/files/6922090/camera_setup.pdf)
 
 By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
 
