@@ -77,6 +77,7 @@ Example output:
 
 ## Setup
 
+The most important is to put both cameras into the correct position to get the most accurate results and to be able to combine the ***x, y, z coordinates*** for plotting in  [Three-dimensional space](https://en.wikipedia.org/wiki/Three-dimensional_space).
 
 ![camera_setup](https://user-images.githubusercontent.com/60201466/127975106-a2da261d-1176-49de-8147-e800477b9523.png)
 
@@ -85,6 +86,7 @@ By positioning two webcams, pointed at orthogonal directions, we can combine the
 Traditional 3D motion capture systems require a sophisticated setup and are very costly and can reduce computational power significantly. This system makes 3D pose capture accessible by much more people.
 
 ## Architectural Diagram
+
 
 <img src="photos/architectural_diagram.png" width="700" height="600">
 
@@ -109,6 +111,17 @@ Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates int
 
 
 **socket.io**
+
+[Socket.IO](https://socket.io/docs/v4/index.html) is a library that enables real-time, bidirectional, and event-based communication between the browser and the server.
+
+Socket.IO is **NOT** a WebSocket implementation. Although Socket.IO indeed uses WebSocket as a transport when possible, it adds additional metadata to each packet. That is why a WebSocket client will not be able to successfully connect to a Socket.IO server, and a Socket.IO client will not be able to connect to a plain WebSocket server either.
+
+**How does that work?**
+
+The client will try to establish a [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) connection if possible, and will fall back on HTTP long polling if not.
+
+WebSocket is a communication protocol which provides a full-duplex and low-latency channel between the server and the browser. More information can be found [here](https://en.wikipedia.org/wiki/WebSocket).
+
 
 Please see the documentation for **socket.io** [here](https://socket.io/docs/v4/index.html)
 
