@@ -9,6 +9,7 @@ The main **stretch goal** of this project is to create 3D pose and eventually ge
 
 ![picture](photos/setup.png)
 
+
 By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
 
 Traditional 3D motion capture systems require a sophisticated setup and are very costly and can reduce computational power significantly. This system makes 3D pose capture accessible by much more people.
@@ -16,15 +17,52 @@ Traditional 3D motion capture systems require a sophisticated setup and are very
 
 ## Architectural Diagram
 
-![picture](photos/architectural_diagram.png)
+<img src="photos/architectural_diagram.png" width="700" height="600">
 
 
 ## Clients on ObservableHQ
 
 [ObservableHQ](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/) that introduces the notebook paradigm to JavaScript projects. (for those of you familiar with Jupyter notebooks, this is the equivalent with JavaScript instead of Python).
 
-Links:
+**How does MoveNet/PoseNet work**
 
+There are two steps:
+
+* First create a detector by chosing one of the models form SupportedModels, including MoveNet and PoseNet.
+    
+    For example:
+    
+            const model = poseDetection.SupportedModels.MoveNet;
+            const detector = await poseDetection.createDetector(model);
+            
+* Then you can use the detector to detect poses.
+            
+            const poses = await detector.estimatePoses(image);
+
+The returned poses list contains detected poses for each individual in the image. For single-person models, there will only be one element in the list. If the model cannot detect any poses, the list will be empty.
+
+For each pose, it contains a confidence score of the pose and an array of keypoints. PoseNet and MoveNet both return *17 keypoints.* 
+
+<img src="photos/keypoints.png" width="300" height="300">
+
+Each keypoint contains x, y, score and name.
+
+Example output:
+
+        [
+          {
+            score: 0.8,
+            keypoints: [
+              {x: 230, y: 220, score: 0.9, name: "nose"},
+              {x: 212, y: 190, score: 0.8, name: "left_eye"},
+              ...
+            ]
+          }
+        ]
+
+
+
+**Links:**
 
 Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 ------------ | ------------- | -------------
