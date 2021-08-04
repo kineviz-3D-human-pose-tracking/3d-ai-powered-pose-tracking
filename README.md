@@ -215,13 +215,13 @@ Code credits:
 
 ## Acknowledgments
 
-We thank Weidong Yang and the Kineviz Team for our biweekly meetings,\
-Nikko Sacramento for plotting the 3D skeleton in GraphXR,\
-Sean Li for debugging the cors issue,\
-Thom Lauret for the more roobust AWS server,\
-Professor Mario Lim for helpful crossover network connection discussions,\
-Alex Law for posting the blogpost,\
-Cynthia Yu and Andrew Mollis for being our models.
+We thank [Weidong Yang](https://www.linkedin.com/in/yangweidong/) and the [Kineviz](https://www.kineviz.com/) Team for our biweekly meetings,\
+[Nikko Sacramento](https://www.linkedin.com/in/nikkosac/) for plotting the 3D skeleton in GraphXR,\
+[Sean Li]() for debugging the cors issue,\
+[Thom Lauret](https://www.linkedin.com/in/thomlauret/) for the more roobust AWS server,\
+Professor [Mario Lim](https://www.linkedin.com/in/mario-lim-243556/) for helpful crossover network connection discussions,\
+[Alex Law](https://www.linkedin.com/in/alexandria-law/) for posting the blogpost,\
+[Cynthia Yu](https://www.shuhuancynthiayu.com/about) for being our models.
 
 ## Contact
 The code of this repository was implemented by [Barbora Novakova](mailto:barunka838@gmail.com) and [Marisa Tania](mailto:mt.marisatania@gmail.com). Feel free to reach out!
