@@ -17,7 +17,7 @@
   * [Description](#description)
     * [Setup](#setup)
     * [Architectural Diagram](#architectural-diagram)
-    * [MoveNet Overview](#overview)
+    * [MoveNet](#movenet)
     * [Client Side](#client-side)
     * [Server Side](#server-side)
   * [Installation](#installation)
@@ -34,8 +34,22 @@
 Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements are captured digitally in 3D in real-time. Until now, this was possible only with expensive systems of multiple cameras, or by having people wear special suits and tracking gears. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D pose from just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
  
 The future goal for this project is to interact in the VR world with no controllers nor wearables. By detecting 3D gestures in non costly ways, we hope to reduce the need of body trackers, hardware usages, and also computational power and make 3D interaction in VR more accessible. Full body tracking for skeletal animation allows for more user expression, which could humanize users. There are endless possible use cases including hand motion interaction with data, video games, and virtual meetings in 3D.
+
+## Setup
+
+Positioning two webcams pointed at orthogonal directions is the simplest way to combine the two 2D poses into a single 3D pose stream. Both cameras are placed at a 90 degrees angle to get the ***x, y, z coordinates*** for plotting in  [Three-dimensional space](https://en.wikipedia.org/wiki/Three-dimensional_space).
+
+*For more information about the proper **camera setup** check [Webcam Notebook](https://observablehq.com/d/823f2f9c4daa588c).*
+![camera_setup](https://user-images.githubusercontent.com/60201466/127975106-a2da261d-1176-49de-8147-e800477b9523.png)
+
+
+## Architectural Diagram
+
+
+<img src="photos/architectural_diagram.png" width="700" height="600">
+
  
-## MoveNet Overview
+## MoveNet
 
 [MoveNet Model](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/movenet) is the latest pre-trained machine learning library [released](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html) by [TensorFlow](https://www.tensorflow.org) team, as part of a larger [Pose Detection](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection) [TensorFlow.js models](https://www.tensorflow.org/js/models) set. MoveNet is a convolutional neural network model that runs on RGB images and predicts human joint locations of a single person that runs faster than real-time ([30+ FPS](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)).
 
@@ -84,18 +98,6 @@ Example output:
 
 
 
-## Setup
-
-Positioning two webcams pointed at orthogonal directions is the simplest way to combine the two 2D poses into a single 3D pose stream. Both cameras are placed at a 90 degrees angle to get the ***x, y, z coordinates*** for plotting in  [Three-dimensional space](https://en.wikipedia.org/wiki/Three-dimensional_space).
-
-*For more information about the proper **camera setup** check [Webcam Notebook](https://observablehq.com/d/823f2f9c4daa588c).*
-![camera_setup](https://user-images.githubusercontent.com/60201466/127975106-a2da261d-1176-49de-8147-e800477b9523.png)
-
-
-## Architectural Diagram
-
-
-<img src="photos/architectural_diagram.png" width="700" height="600">
 
 
 ## Client Side
@@ -103,9 +105,7 @@ Positioning two webcams pointed at orthogonal directions is the simplest way to 
 [ObservableHQ](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/) that introduces the notebook paradigm to JavaScript projects. (for those of you familiar with Jupyter notebooks, this is the equivalent with JavaScript instead of Python).
 
 
-
-
-## Links Client-side ObservableHQ Notebooks
+## Links To ObservableHQ Notebooks
 
 Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 ------------ | ------------- | -------------
@@ -117,7 +117,7 @@ Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates int
 ## Server Side
 
 
-**socket.io**
+**Socket.IO**
 
 [Socket.IO](https://socket.io/docs/v4/index.html) is a library that enables real-time, bidirectional, and event-based communication between the browser and the server.
 
