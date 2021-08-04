@@ -142,24 +142,16 @@ Socket.io enables real-time bidirectional event-based communication.
 
 ## Installation
 
-        $ npm install --global mocha
-    
-**Then run tests with**
-
-        $ npm test
-        $ npm i supertest
-    
-*More information about Mocha you can find [here](https://mochajs.org/)*
-   
-   
 Install npm before running index.jx:
 
-       $ npm install
+        $ npm install
        
-       $ npm install socket.io
+        $ npm install socket.io
        
-       $ npm install express
-       
+        $ npm install express
+
+        $ npm install --global mocha
+    
 
 ## Usage
 
@@ -181,6 +173,14 @@ to start the server in the terminal and you should get confirmation response
 **How to Test**
 
 [Mocha](https://mochajs.org/) is a feature-rich JavaScript test framework running on [Node.js](https://nodejs.org/en/) and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on [GitHub](https://github.com/mochajs/mocha).
+
+To run:
+
+        $ npm test
+    
+*More information about Mocha you can find [here](https://mochajs.org/)*
+   
+   
 
 
 ## Demo
