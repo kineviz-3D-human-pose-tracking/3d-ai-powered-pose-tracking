@@ -200,8 +200,6 @@ To run:
       * [husky](https://www.npmjs.com/package/husky)
   * [mocha](https://mochajs.org/)
 
----
-
 ## Credits
 
 Developed for the [Kineviz Summer Project](https://kineviz.com/) by:
@@ -227,5 +225,3 @@ Cynthia Yu and Andrew Mollis for being our models.
 
 ## Contact
 The code of this repository was implemented by [Barbora Novakova](mailto:barunka838@gmail.com) and [Marisa Tania](mailto:mt.marisatania@gmail.com). Feel free to reach out!
-
----
