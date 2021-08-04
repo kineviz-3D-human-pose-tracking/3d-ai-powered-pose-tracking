@@ -31,10 +31,10 @@
 
 ## Description
 
-Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements are captured digitally in 3D in real-time. Until now, this was possible only with expensive systems of multiple cameras, or by having people wear special suits and tracking gears. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers.
-
-The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are.  
-
+Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements are captured digitally in 3D in real-time. Until now, this was possible only with expensive systems of multiple cameras, or by having people wear special suits and tracking gears. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D pose from just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
+ 
+The future goal for this project is to interact in the VR world with no controllers nor wearables. By detecting 3D gestures in non costly ways, we hope to reduce the need of body trackers, hardware usages, and also computational power and make 3D interaction in VR more accessible. Full body tracking for skeletal animation allows for more user expression, which could humanize users. There are endless possible use cases including hand motion interaction with data, video games, and virtual meetings in 3D.
+ 
 ## MoveNet Overview
 
 [MoveNet Model](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/movenet) is the latest pre-trained machine learning library [released](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html) by [TensorFlow](https://www.tensorflow.org) team, as part of a larger [Pose Detection](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection) [TensorFlow.js models](https://www.tensorflow.org/js/models) set. MoveNet is a convolutional neural network model that runs on RGB images and predicts human joint locations of a single person that runs faster than real-time ([30+ FPS](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)).
@@ -45,8 +45,7 @@ We encouraged you to check our [2D Webcam Pose Detection With PoseNet]() to comp
 
 **Although impressive, the pose is still in 2D.** 
 
-The **stretch goal** of this project is to create 3D pose and eventually get the 3D pose using [GraphXR](https://www.kineviz.com/visualization) to visualize the data. GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
-
+For this project, we created a 3D skeleton pose displayed in [GraphXR](https://www.kineviz.com/visualization). GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
 
 
 **How does MoveNet work**
@@ -54,8 +53,6 @@ The **stretch goal** of this project is to create 3D pose and eventually get the
 There are two steps:
 
 * First create a detector by chosing one of the models form SupportedModels, including MoveNet.
-    
-    For example:
     
             const model = poseDetection.SupportedModels.MoveNet;
             const detector = await poseDetection.createDetector(model);
@@ -89,13 +86,11 @@ Example output:
 
 ## Setup
 
-The most important is to put both cameras into the correct position to get the most accurate results and to be able to combine the ***x, y, z coordinates*** for plotting in  [Three-dimensional space](https://en.wikipedia.org/wiki/Three-dimensional_space).
+Positioning two webcams pointed at orthogonal directions is the simplest way to combine the two 2D poses into a single 3D pose stream. Both cameras are placed at a 90 degrees angle to get the ***x, y, z coordinates*** for plotting in  [Three-dimensional space](https://en.wikipedia.org/wiki/Three-dimensional_space).
 
+*For more information about the proper **camera setup** check [Webcam Notebook](https://observablehq.com/d/823f2f9c4daa588c).*
 ![camera_setup](https://user-images.githubusercontent.com/60201466/127975106-a2da261d-1176-49de-8147-e800477b9523.png)
 
-By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream.
-
-Traditional 3D motion capture systems require a sophisticated setup and are very costly and can reduce computational power significantly. This system makes 3D pose capture accessible by much more people.
 
 ## Architectural Diagram
 
@@ -133,7 +128,6 @@ Socket.IO is **NOT** a WebSocket implementation. Although Socket.IO indeed uses 
 The client will try to establish a [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) connection if possible, and will fall back on HTTP long polling if not.
 
 WebSocket is a communication protocol which provides a full-duplex and low-latency channel between the server and the browser. More information can be found [here](https://en.wikipedia.org/wiki/WebSocket).
-
 
 Please see the documentation for **socket.io** [here](https://socket.io/docs/v4/index.html)
 
