@@ -196,6 +196,8 @@ https://user-images.githubusercontent.com/55717978/128236263-c851a8bd-8584-4058-
 
 ## GraphXR
 
+[GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). However, most GraphXR users work in traditional 2D computing environments. For them, the value in GraphXR comes from the ease of conducting statistical link analysis, geospatial visualization, timeline filtering and the incorporation of rich content like portrait images as well as in-app video.
+
 ## Dependencies
 
  
