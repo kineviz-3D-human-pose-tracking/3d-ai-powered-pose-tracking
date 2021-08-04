@@ -198,7 +198,6 @@ To run:
       * [husky](https://www.npmjs.com/package/husky)
   * [mocha](https://mochajs.org/)
 
-
 ---
 
 ## Credits
@@ -216,7 +215,7 @@ Code credits:
 
 ## Acknowledgments
 
-We thank Weidong Yang and the Kineviz Team for our biweekly meetings,
+We thank Weidong Yang and the Kineviz Team for our biweekly meetings,\
 Nikko Sacramento for plotting the 3D skeleton in GraphXR,\
 Sean Li for debugging the cors issue,\
 Thom Lauret for the more roobust AWS server,\
