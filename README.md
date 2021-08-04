@@ -55,7 +55,8 @@ Positioning two webcams pointed at orthogonal directions is the simplest way to 
 
 The [pose Animator](https://blog.tensorflow.org/2020/05/pose-animator-open-source-tool-to-bring-svg-characters-to-life.html) meshes SVG, [face landmarks detection](https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection), and motion capture with [pose estimation](https://www.tensorflow.org/lite/examples/pose_estimation/overview) allows [real-time human pose estimation in the browser](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5).
 
-We encouraged you to check our [2D Webcam Pose Detection With PoseNet]() to compare the robustness of the two pose detection models. Compared to TensorFlow's older model PoseNet, the [MoveNet model](https://storage.googleapis.com/tfjs-models/demos/pose-detection/index.html?model=movenet) has a powerful combination of speed and accuracy needed that allows an accurate depiction of difficult poses. 
+We encouraged you to check our [2D Webcam Pose Detection With PoseNet](https://observablehq.com/@mt-cs/posenet-webcam-1) to compare the robustness of the two pose detection models. Compared to TensorFlow's older model PoseNet, the [MoveNet model](https://storage.googleapis.com/tfjs-models/demos/pose-detection/index.html?model=movenet) has a powerful combination of speed and accuracy needed that allows an accurate depiction of difficult poses. 
+
 
 **Although impressive, the pose is still in 2D.** 
 
@@ -203,8 +204,8 @@ To run:
 ## Credits
 
 Developed for the [Kineviz Summer Project](https://kineviz.com/) by:
-* Marisa Tania
-* Barbora Novakova
+* [Marisa Tania](https://www.linkedin.com/in/marisatania/)
+* [Barbora Novakova](https://www.linkedin.com/in/barbora-novakova-666029126/)
 
 Sponsor: Weidong Yang
 
@@ -215,13 +216,14 @@ Code credits:
 
 ## Acknowledgments
 
-We thank [Weidong Yang](https://www.linkedin.com/in/yangweidong/) and the [Kineviz](https://www.kineviz.com/) Team for our biweekly meetings,\
-[Nikko Sacramento](https://www.linkedin.com/in/nikkosac/) for plotting the 3D skeleton in GraphXR,\
-[Sean Li]() for debugging the cors issue,\
-[Thom Lauret](https://www.linkedin.com/in/thomlauret/) for the more roobust AWS server,\
-Professor [Mario Lim](https://www.linkedin.com/in/mario-lim-243556/) for helpful crossover network connection discussions,\
-[Alex Law](https://www.linkedin.com/in/alexandria-law/) for posting the blogpost,\
-[Cynthia Yu](https://www.shuhuancynthiayu.com/about) for being our models.
+We sincerely thank:
+* [Weidong Yang](https://www.linkedin.com/in/yangweidong/) and the [Kineviz](https://www.kineviz.com/) Team for our biweekly meetings
+* [Nikko Sacramento](https://www.linkedin.com/in/nikkosac/) for plotting the 3D skeleton in GraphXR
+* Sean Li for debugging the cors issue
+* [Thom Lauret](https://www.linkedin.com/in/thomlauret/) for the more robust AWS server
+* Professor [Mario Lim](https://www.linkedin.com/in/mario-lim-243556/) for helpful crossover network connection discussions
+* [Alex Law](https://www.linkedin.com/in/alexandria-law/) for posting the blogpost
+* [Cynthia Yu](https://www.shuhuancynthiayu.com/about) for being our model.
 
 ## Contact
 The code of this repository was implemented by [Barbora Novakova](mailto:barunka838@gmail.com) and [Marisa Tania](mailto:mt.marisatania@gmail.com). Feel free to reach out!
