@@ -102,8 +102,9 @@ Example output:
 
 ## Client Side
 
-[ObservableHQ](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/) that introduces the notebook paradigm to JavaScript projects. (for those of you familiar with Jupyter notebooks, this is the equivalent with JavaScript instead of Python).
+Development of the clients are done on [ObservableHQ](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1). It is the notebook paradigm to JavaScript projects. (for those of you familiar with Jupyter notebooks, this is the [equivalent with JavaScript](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/) instead of Python).
 
+There are two notebook webcams that are equivalent to one another, which emit data to the server. The third ObservableHQ notebook is the receiver that takes in both webcams data from the server.
 
 ## Links To ObservableHQ Notebooks
 
@@ -116,6 +117,7 @@ Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates int
     
 ## Server Side
 
+Browsers running on multiple devices will be connected using Socket.IO.
 
 **Socket.IO**
 
