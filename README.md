@@ -24,6 +24,7 @@
   * [Usage](#usage)
   * [Tests](#tests)
   * [Demo](#demo)
+  * [GraphXR](#graphXR)
   * [Dependencies](#dependencies)
   * [Credits](#credits)
   * [Acknowledgments](#acknowledgments)
@@ -188,6 +189,8 @@ To run:
 
 ## Demo
 
+
+## GraphXR
 
 ## Dependencies
 
