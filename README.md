@@ -249,8 +249,8 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 ## Demo
 
 
-[!(<img width="727" alt="running_3d_ai_pose" src="https://user-images.githubusercontent.com/60201466/128434040-66763376-510e-4365-837d-354703154c32.png">
-)](https://youtu.be/ro4RbWt83J0)
+[![running_3d_ai_pose](https://user-images.githubusercontent.com/60201466/128435020-3f5353be-c601-4333-a09d-509e14db3034.png)
+](https://youtu.be/ro4RbWt83J0)
 
 ## Dependencies
 
