@@ -193,6 +193,16 @@ To run:
 GraphXR displays our webcams scream as a skeleton represented as **nodes** connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
 
 
+Main steps how to run GraphXR are explained in our **[Demo](#demo)** below
+
+Before watching start by:
+
+   * Creating account on [GraphXR Next](https://graphxrnext.kineviz.com/)
+   * Downloading CSV file from Receiver Notebook
+   * Downloading skel.grove and skelly.graphxr from folder graphXR 
+
+
+
 **Supported Environments**
 
       WINDOWS, MAC OSX AND LINUX
@@ -211,15 +221,6 @@ GraphXR displays our webcams scream as a skeleton represented as **nodes** conne
           addition, GraphXR Enterprise is available via on-premises or private cloud
           deployments.
      
-
-Main steps how to run GraphXR are explained in our **[Demo](#demo)** below
-
-Before watching start by:
-
-   * Creating account on [GraphXR Next](https://graphxrnext.kineviz.com/)
-   * Downloading CSV file from Receiver Notebook
-   * Downloading skel.grove and skelly.graphxr from folder graphXR 
-
 
 *For more information check out [GraphXR User Guide](https://static1.squarespace.com/static/5c58b86e8dfc8c2d0d700050/t/5df2bc684c2e38505cf2be1c/1576189042217/GraphXR_User_Guide_v2_2_1.pdf)*
    
