@@ -2,13 +2,13 @@
 # AI Powered 3D Human Pose Tracking and Analysis
 
 
-MoveNet: [[Webcam 1](https://expose.is.tue.mpg.de/)] 
-[[Webcam 2](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/620/0983.pdf)]
-[[Receiver](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/621/0983-supp_no_header_compressed.pdf)]
+MoveNet: [[Webcam 1](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1)] 
+[[Webcam 2](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-2)]
+[[Receiver](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-receiver)]
 
-PoseNet: [[Webcam 1](https://expose.is.tue.mpg.de/)] 
-[[Webcam 2](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/620/0983.pdf)]
-[[Receiver](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/621/0983-supp_no_header_compressed.pdf)]
+PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)] 
+[[Webcam 2](https://observablehq.com/@mt-cs/posenet-webcam-2)]
+[[Receiver](https://observablehq.com/@mt-cs/posenet-receiver)]
 
 | Webcam 1 | Webcam 2 |
 | --- | --- |
@@ -16,7 +16,7 @@ PoseNet: [[Webcam 1](https://expose.is.tue.mpg.de/)]
 
 | Camera | GraphXR 3D |
 | --- | --- |
-|  [![Receiver](https://img.youtube.com/vi/a-sVItuoPek/0.jpg)](https://www.youtube.com/watch?v=a-sVItuoPek) | [![GraphXR](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | 
+|  [![Camera](https://img.youtube.com/vi/a-sVItuoPek/0.jpg)](https://www.youtube.com/watch?v=a-sVItuoPek) | [![GraphXR](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | 
 
 ## Table of Contents
   * [Description](#description)
