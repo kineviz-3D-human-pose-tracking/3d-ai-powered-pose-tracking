@@ -202,18 +202,18 @@ GraphXR displays our webcams scream as a skeleton represented as **nodes** conne
 
 If you want to visualize the csv data you collected in 3D, we recommend to try Kineviz GraphXR.
 
- Follow these steps:
+Follow these steps:
 
-       • Create account on [GraphXR Next](https://graphxrnext.kineviz.com/)
-       • Download skel.grove and skelly.graphxr from [GitHub](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/tree/main/graphXR) folder
-       • Create new Project in GraphXR Next
-       • Open the recently created project
-       • Click on Project icon on left and then Extensions and pick Grove
-       • Click on View attached files and change into desired .csv data
-       • Drag skelly.graphxr and paste it into the background
-       • Hold right click to rotate the Skeleton as needed
-       • Go to Settings to adjust the visualization
-       • If you want to escape into Virtual Reality World, you can put on your goggles and watch your skeleton in there  
+   • Create account on [GraphXR Next](https://graphxrnext.kineviz.com/)
+   • Download skel.grove and skelly.graphxr from [GitHub](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/tree/main/graphXR) folder
+   • Create new Project in GraphXR Next
+   • Open the recently created project
+   • Click on Project icon on left and then Extensions and pick Grove
+   • Click on View attached files and change into desired .csv data
+   • Drag skelly.graphxr and paste it into the background
+   • Hold right click to rotate the Skeleton as needed
+   • Go to Settings to adjust the visualization
+   • If you want to escape into Virtual Reality World, you can put on your goggles and watch your skeleton in there  
 
 
   
