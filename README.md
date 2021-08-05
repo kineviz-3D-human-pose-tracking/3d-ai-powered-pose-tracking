@@ -193,7 +193,9 @@ To run:
 GraphXR displays our webcams scream as a skeleton represented as **nodes** connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
 
 
-Main steps how to run GraphXR are explained in our **[Demo](#demo)** below
+**How to run collected data in GraphXR**
+
+Main steps are explained in our **[Demo](#demo)** below
 
 Before watching start by:
 
