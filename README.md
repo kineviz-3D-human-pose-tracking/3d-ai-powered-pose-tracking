@@ -119,9 +119,7 @@ Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates int
     
 ## Server Side
 
-Browsers running on multiple devices will be connected using Socket.IO.
-
-**Socket.IO**
+Browsers running on multiple devices will be connected using **Socket.IO.**
 
 [Socket.IO](https://socket.io/docs/v4/index.html) is a library that enables real-time, bidirectional, and event-based communication between the browser and the server.
 
@@ -197,6 +195,8 @@ https://user-images.githubusercontent.com/55717978/128236263-c851a8bd-8584-4058-
 ## GraphXR
 
 [GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). However, most GraphXR users work in traditional 2D computing environments. For them, the value in GraphXR comes from the ease of conducting statistical link analysis, geospatial visualization, timeline filtering and the incorporation of rich content like portrait images as well as in-app video.
+
+[GraphXR User Guide](https://static1.squarespace.com/static/5c58b86e8dfc8c2d0d700050/t/5df2bc684c2e38505cf2be1c/1576189042217/GraphXR_User_Guide_v2_2_1.pdf)
 
 ## Dependencies
 
