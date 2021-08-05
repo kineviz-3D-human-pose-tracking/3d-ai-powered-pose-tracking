@@ -206,7 +206,7 @@ Before watching start by:
 
    * Creating account on [GraphXR Next](https://graphxrnext.kineviz.com/)
    * Downloading CSV file from Receiver Notebook
-   * Downloading skel.grove and skelly.graphxr from folder graphXR 
+   * Downloading skel.grove and skelly.graphxr from folder [graphXR](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/tree/main/graphXR) 
 
 
 
