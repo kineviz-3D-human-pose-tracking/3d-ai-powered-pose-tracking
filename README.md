@@ -213,7 +213,7 @@ Follow these steps:
    • Drag skelly.graphxr and paste it into the background\
    • Hold right click to rotate the Skeleton as needed\
    • Go to Settings to adjust the visualization\
-   • If you want to escape into Virtual Reality World, you can put on your goggles and watch your skeleton in there\
+   • If you want to escape into Virtual Reality World, you can put on your goggles and watch your skeleton in there
 
 
   
