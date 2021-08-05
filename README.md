@@ -194,13 +194,11 @@ https://user-images.githubusercontent.com/55717978/128236263-c851a8bd-8584-4058-
 
 ## GraphXR
 
-[GraphXR](https://www.kineviz.com/) enables graph exploration in [virtual reality (VR)](https://en.wikipedia.org/wiki/Virtual_reality). However, most GraphXR users work in traditional 2D computing environments. For them, the value in GraphXR comes from the ease of conducting statistical link analysis, geospatial visualization, timeline filtering and the incorporation of rich content like portrait images as well as in-app video.
-
+[GraphXR](https://www.kineviz.com/) enables graph exploration in [virtual reality (VR)](https://en.wikipedia.org/wiki/Virtual_reality). 
 
 <img src="photos/skelly.png" width="300" height="200">
 
-GraphXR displays data represented as **nodes** connected by **edges** in an interactive virtual 3D
-graph space, and provides a powerful set of tools to explore and modify the data.
+GraphXR displays our webcams scream as a skeleton represented as **nodes** connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
 
 
 **Supported Environments**
@@ -221,6 +219,14 @@ graph space, and provides a powerful set of tools to explore and modify the data
           addition, GraphXR Enterprise is available via on-premises or private cloud
           deployments.
      
+
+Main steps how to run in GraphXR you can learn from our  * [Demo](#demo) above
+
+   * Create account on [graphxrnext](https://graphxrnext.kineviz.com/)
+   * Downloaded CSV file from Receiver Notebook
+   * Downloaded skel.grove and skelly.graphxr from folder graphXR 
+
+
 
 
 For more information check out [GraphXR User Guide](https://static1.squarespace.com/static/5c58b86e8dfc8c2d0d700050/t/5df2bc684c2e38505cf2be1c/1576189042217/GraphXR_User_Guide_v2_2_1.pdf)
