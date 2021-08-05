@@ -7,7 +7,8 @@
 
 | Webcam 1 | Webcam 1 MoveNet | Webcam 2 MoveNet
 | --- | --- | --- | 
-|  [![Webcam1](https://img.youtube.com/vi/a-sVItuoPek/0.jpg)](https://www.youtube.com/watch?v=a-sVItuoPek) | [![Webcam2](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | [![Webcam3](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | 
+|  [![Webcam1](https://img.youtube.com/vi/a-sVItuoPek/0.jpg)](https://www.youtube.com/watch?v=a-sVItuoPek) | [![Webcam2](![webcam2_movenet](https://user-images.githubusercontent.com/60201466/128271354-c13c9f68-9de0-4c83-9d82-10d9df8727c8.gif)
+) | [![Webcam3](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | 
 
 | Receiver 2D | GraphXR 3D |
 | --- | --- |
