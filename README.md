@@ -12,7 +12,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
 
 | Webcam 1 | Webcam 2 |
 | --- | --- |
-| ![Webcam1](https://user-images.githubusercontent.com/60201466/128408730-f40e4d74-a736-42d8-9369-4f5f363ca147.gif) | ![Webcam2]([movenet_ai_pose_detection_webcam2_500](https://user-images.githubusercontent.com/60201466/128409678-da137bb6-a809-4c82-a65b-4e15976cd499.gif) | 
+| ![Webcam1](https://user-images.githubusercontent.com/60201466/128408730-f40e4d74-a736-42d8-9369-4f5f363ca147.gif) | ![Webcam2](https://user-images.githubusercontent.com/60201466/128409678-da137bb6-a809-4c82-a65b-4e15976cd499.gif) | 
 
 | Camera | GraphXR 3D |
 | --- | --- |
