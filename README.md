@@ -200,7 +200,7 @@ GraphXR displays our webcams scream as a skeleton represented as **nodes** conne
 **How to run collected data in GraphXR**
 
 
-If you want to visualize the csv data you collected in 3D, we recommend to try Kineviz GraphXR.
+If you want to visualize the csv data you collected in 3D, we recommend to try [Kineviz GraphXR](https://www.kineviz.com/?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gQj_BLHfVHzERnLd8sHldIo0SXmMglRqNBq2CgklB5mUINKPAXDQxoCm38QAvD_BwE).
 
 Follow these steps:
 
