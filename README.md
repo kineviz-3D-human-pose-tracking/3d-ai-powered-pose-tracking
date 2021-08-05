@@ -16,7 +16,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
 
 | GraphXR 3D |
 | --- |
-| [![GraphXR](https://img.youtube.com/vi/lNTmHLYTiB8/0.jpg)](https://www.youtube.com/watch?v=lNTmHLYTiB8) | 
+| [![GraphXR](https://user-images.githubusercontent.com/60201466/128414336-dad44e09-1753-45aa-a548-70c26bcc2e2a.gif) | 
 
 ## Table of Contents
   * [Description](#description)
