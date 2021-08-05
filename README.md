@@ -1,13 +1,18 @@
 
 # AI Powered 3D Human Pose Tracking and Analysis
 
-[[Webcam 1](https://expose.is.tue.mpg.de/)] 
+
+MoveNet: [[Webcam 1](https://expose.is.tue.mpg.de/)] 
+[[Webcam 2](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/620/0983.pdf)]
+[[Receiver](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/621/0983-supp_no_header_compressed.pdf)]
+
+PoseNet: [[Webcam 1](https://expose.is.tue.mpg.de/)] 
 [[Webcam 2](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/620/0983.pdf)]
 [[Receiver](https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/621/0983-supp_no_header_compressed.pdf)]
 
 | Webcam 1 | Webcam 2 |
-| --- | --- | 
-|  ![Webcam1](https://user-images.githubusercontent.com/60201466/128302890-7bfb47a5-867e-4bf1-90b0-f5fffa165972.gif) | ![Webcam2](https://user-images.githubusercontent.com/60201466/128271354-c13c9f68-9de0-4c83-9d82-10d9df8727c8.gif) |
+| --- | --- |
+|  ![Webcam1](https://user-images.githubusercontent.com/60201466/128302890-7bfb47a5-867e-4bf1-90b0-f5fffa165972.gif) | ![Webcam2](https://user-images.githubusercontent.com/60201466/128271354-c13c9f68-9de0-4c83-9d82-10d9df8727c8.gif) | 
 
 | Camera | GraphXR 3D |
 | --- | --- |
