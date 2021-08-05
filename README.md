@@ -249,11 +249,8 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 ## Demo
 
 
-
-
-https://user-images.githubusercontent.com/55717978/128306293-05b63fce-02df-4850-b2de-71b35a593f3f.mp4
-
-
+[![Running 3D AI-Powered Pose Tracking and Analysis](<img width="727" alt="Screen Shot 2021-08-05 at 3 44 40 PM" src="https://user-images.githubusercontent.com/60201466/128433904-66d154e7-d994-411b-ae3b-349631e04297.png">
+)](https://youtu.be/ro4RbWt83J0)
 
 ## Dependencies
 
