@@ -23,8 +23,8 @@
   * [Installation](#installation)
   * [Usage](#usage)
   * [Tests](#tests)
-  * [Demo](#demo)
   * [GraphXR](#graphXR)
+  * [Demo](#demo)
   * [Dependencies](#dependencies)
   * [Credits](#credits)
   * [Acknowledgments](#acknowledgments)
@@ -182,14 +182,6 @@ To run:
     
 *More information about Mocha you can find [here](https://mochajs.org/)*
    
-   
-
-
-## Demo
-
-
-https://user-images.githubusercontent.com/55717978/128236263-c851a8bd-8584-4058-a428-197131912c1c.mp4
-
 
 
 ## GraphXR
@@ -220,16 +212,27 @@ GraphXR displays our webcams scream as a skeleton represented as **nodes** conne
           deployments.
      
 
-Main steps how to run in GraphXR you can learn from our  * [Demo](#demo) above
+Main steps how to run GraphXR are explained in our **[Demo](#demo)** below
 
-   * Create account on [graphxrnext](https://graphxrnext.kineviz.com/)
-   * Downloaded CSV file from Receiver Notebook
-   * Downloaded skel.grove and skelly.graphxr from folder graphXR 
+Before watching start by:
+
+   * Creating account on [GraphXR Next](https://graphxrnext.kineviz.com/)
+   * Downloading CSV file from Receiver Notebook
+   * Downloading skel.grove and skelly.graphxr from folder graphXR 
+
+
+*For more information check out [GraphXR User Guide](https://static1.squarespace.com/static/5c58b86e8dfc8c2d0d700050/t/5df2bc684c2e38505cf2be1c/1576189042217/GraphXR_User_Guide_v2_2_1.pdf)*
+   
+
+
+## Demo
 
 
 
 
-For more information check out [GraphXR User Guide](https://static1.squarespace.com/static/5c58b86e8dfc8c2d0d700050/t/5df2bc684c2e38505cf2be1c/1576189042217/GraphXR_User_Guide_v2_2_1.pdf)
+https://user-images.githubusercontent.com/55717978/128306293-05b63fce-02df-4850-b2de-71b35a593f3f.mp4
+
+
 
 ## Dependencies
 
