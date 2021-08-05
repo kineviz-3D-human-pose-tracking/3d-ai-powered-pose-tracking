@@ -204,7 +204,7 @@ If you want to visualize the csv data you collected in 3D, we recommend to try [
 
 Follow these steps:
 
-   • Create account on [GraphXR Next](https://graphxrnext.kineviz.com/)\
+   • Create account on [GraphXR Next](https://graphxrnext.kineviz.com/register)\
    • Download skel.grove and skelly.graphxr from [GitHub](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/tree/main/graphXR) folder\
    • Create new Project in GraphXR Next\
    • Open the recently created project\
