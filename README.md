@@ -249,8 +249,7 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 ## Demo
 
 
-[![running_3d_ai_pose](https://user-images.githubusercontent.com/60201466/128435020-3f5353be-c601-4333-a09d-509e14db3034.png)
-](https://youtu.be/ro4RbWt83J0)
+[![Running AI Powered 3D Human Pose Tracking and Analysis](https://user-images.githubusercontent.com/60201466/128557336-dffa8da8-42e3-4427-bfdf-ca1dedf14a5c.png)](https://youtu.be/Kue8udG9MhI)
 
 ## Dependencies
 
