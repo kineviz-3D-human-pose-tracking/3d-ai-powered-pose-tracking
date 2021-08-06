@@ -265,7 +265,7 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 
 ## Credits
 
-Developed for the [Kineviz Summer Project](https://kineviz.com/) by:
+Developed for the [Kineviz](https://kineviz.com/) and [University of San Francisco](https://www.usfca.edu/arts-sciences/graduate-programs/computer-science?gclid=Cj0KCQjwu7OIBhCsARIsALxCUaOnomqGePhLPOYnIdNZNowVP2aSLsepdMYOe9W5Gb3InnI8b5lDKxAaAk03EALw_wcB) Summer Project by:
 * [Marisa Tania](https://www.linkedin.com/in/marisatania/)
 * [Barbora Novakova](https://www.linkedin.com/in/barbora-novakova-666029126/)
 
