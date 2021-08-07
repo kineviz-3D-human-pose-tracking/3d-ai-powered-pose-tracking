@@ -196,12 +196,12 @@ To run:
 
 <img src="photos/skelly.png" width="300" height="200">
 
-GraphXR displays our webcams scream as a skeleton represented as **nodes** connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
+GraphXR displays the combined webcams stream as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
 
 **How to run collected data in GraphXR**
 
 
-If you want to visualize the csv data you collected in 3D, we recommend to try [Kineviz GraphXR](https://www.kineviz.com/?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gQj_BLHfVHzERnLd8sHldIo0SXmMglRqNBq2CgklB5mUINKPAXDQxoCm38QAvD_BwE).
+If you want to visualize the csv data you collected in 3D, you can input your data to [Kineviz GraphXR](https://www.kineviz.com/?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gQj_BLHfVHzERnLd8sHldIo0SXmMglRqNBq2CgklB5mUINKPAXDQxoCm38QAvD_BwE).
 
 Follow these steps:
 
