@@ -196,7 +196,7 @@ To run:
 
 <img src="photos/skelly.png" width="300" height="200">
 
-GraphXR displays the combined webcams stream as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
+GraphXR displays the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
 
 **How to run collected data in GraphXR**
 
