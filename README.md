@@ -30,6 +30,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
   * [Tests](#tests)
   * [GraphXR](#graphXR)
   * [Demo](#demo)
+  * [Future Application](#future-application)
   * [Dependencies](#dependencies)
   * [Credits](#credits)
   * [Acknowledgments](#acknowledgments)
@@ -250,6 +251,15 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 
 
 [![Running AI Powered 3D Human Pose Tracking and Analysis](https://user-images.githubusercontent.com/60201466/128557336-dffa8da8-42e3-4427-bfdf-ca1dedf14a5c.png)](https://youtu.be/Kue8udG9MhI)
+
+
+## Future Applications
+
+
+**Gesture Recognition in the Virtual World**
+
+Using **Machine Learning for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be mainly used for interactivity with different objects. Most XR is tracking from the glasses so you don't always see your hands, now with the two webcams in the front you do see your hands. So that gives you the ability to immerse yourself, whether if you start seeing your hand arms in the virtual environment you actually can have this like the body since you start to integrate the virtual body as if you're real body. Very natural gestures like push, pull, grab, drag can become events to be used in the interactive world. Building the model that can put different things in different places.
+
 
 ## Dependencies
 
