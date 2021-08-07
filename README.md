@@ -254,6 +254,7 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 
 
 
+
 ## Future Applications
 
 
