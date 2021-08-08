@@ -38,7 +38,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
 
 ## Description
 
-Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements be captured digitally in 3D in real-time. Until now, this was possible only with expensive systems using multiple cameras and/or by having people wear special suits and tracking points or tracking devices. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D pose from just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
+Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements be captured digitally in 3D in real-time. Until now, this was possible only with expensive systems using multiple cameras and/or by having people wear special suits and tracking points or tracking devices. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D poses by just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
  
 The long-term goal of this project is to interact in the VR world without controllers or wearables. By detecting 3D gestures in non-costly ways, we hope to reduce the need for body trackers, hardware usage, and also computational power and make 3D interaction in VR more accessible. Full-body tracking for skeletal animation allows for more user expression that could humanize users in the VR world. There are endless use cases including hand motion interaction with data, video games, and virtual meetings in 3D.
 
@@ -74,7 +74,7 @@ For this project, we created a 3D skeleton pose displayed in [GraphXR](https://w
 
 There are two steps:
 
-* First create a detector by chosing one of the models form SupportedModels, including MoveNet.
+* First create a detector by choosing one of the models from SupportedModels, including MoveNet.
     
             const model = poseDetection.SupportedModels.MoveNet;
             const detector = await poseDetection.createDetector(model);
@@ -89,7 +89,7 @@ For each pose, it contains a confidence score of the pose and an array of keypoi
 
 <img src="photos/keypoints.png" width="300" height="300">
 
-Each keypoint contains x, y, score and name.
+Each keypoint contains x, y, score, and name.
 
 Example output:
 
@@ -112,7 +112,7 @@ Example output:
 
 The development of the clients is done on [ObservableHQ](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1). It is the notebook paradigm to JavaScript projects. (for those of you familiar with Jupyter notebooks, this is the [equivalent with JavaScript](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/) instead of Python).
 
-There are two notebook webcams that are equivalent to one another, which emit data to the server. The third ObservableHQ notebook is the receiver that takes in both webcams data from the server.
+Two notebook webcams are equivalent to one another, which emit data to the server. The third ObservableHQ notebook is the receiver that takes in both webcams data from the server.
 
 ## Links To ObservableHQ Notebooks
 
@@ -129,13 +129,13 @@ Browsers running on multiple devices will be connected using **Socket.IO.**
 
 [Socket.IO](https://socket.io/docs/v4/index.html) is a library that enables real-time, bidirectional, and event-based communication between the browser and the server.
 
-Socket.IO is **NOT** a WebSocket implementation. Although Socket.IO indeed uses WebSocket as a transport when possible, it adds additional metadata to each packet. That is why a WebSocket client will not be able to successfully connect to a Socket.IO server, and a Socket.IO client will not be able to connect to a plain WebSocket server either.
+Socket.IO is **NOT** a WebSocket implementation. Although Socket.IO indeed uses WebSocket as transport when possible, it adds additional metadata to each packet. That is why a WebSocket client will not be able to successfully connect to a Socket.IO server, and a Socket.IO client will not be able to connect to a plain WebSocket server either.
 
 **How does that work?**
 
-The client will try to establish a [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) connection if possible, and will fall back on HTTP long polling if not.
+The client will try to establish a [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) connection if possible and will fall back on HTTP long-polling if not.
 
-WebSocket is a communication protocol which provides a full-duplex and low-latency channel between the server and the browser. More information can be found [here](https://en.wikipedia.org/wiki/WebSocket).
+WebSocket is a communication protocol that provides a full-duplex and low-latency channel between the server and the browser. More information can be found [here](https://en.wikipedia.org/wiki/WebSocket).
 
 Please see the documentation for **socket.io** [here](https://socket.io/docs/v4/index.html)
 
@@ -144,7 +144,7 @@ Socket.io enables real-time bidirectional event-based communication.
 -  **index.js** server (this repository)
 
      * this server listens on port *9000*
-     * informs when user gets connected and disconnected
+     * informs when a user gets connected and disconnected
      * broadcast and emits skeleton data to the listening clients
 
 
@@ -171,7 +171,7 @@ Simply run
 
         $  node index.js
     
-to start the server in the terminal and you should get confirmation response 
+to start the server in the terminal and you should get a confirmation response 
 
    *listening on port 9000* 
    
@@ -180,7 +180,7 @@ to start the server in the terminal and you should get confirmation response
 
 **How to Test**
 
-[Mocha](https://mochajs.org/) is a feature-rich JavaScript test framework running on [Node.js](https://nodejs.org/en/) and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on [GitHub](https://github.com/mochajs/mocha).
+[Mocha](https://mochajs.org/) is a feature-rich JavaScript test framework running on [Node.js](https://nodejs.org/en/) and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting while mapping uncaught exceptions to the correct test cases. Hosted on [GitHub](https://github.com/mochajs/mocha).
 
 To run:
 
@@ -192,7 +192,7 @@ To run:
 
 ## GraphXR
 
-[GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). Utilizing GraphXR, we display the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
+[GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). Utilizing GraphXR, we display the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space and provides a powerful set of tools to explore and modify the data.
 
 [![Graph XR 3D AI Demo](https://user-images.githubusercontent.com/60201466/128616725-f2466cff-8234-403c-94d1-261a12eaa2c3.png)
 ](https://www.youtube.com/watch?v=mi5JO6QNtEQ)
@@ -208,12 +208,12 @@ Follow these steps:
 
    • Create account on [GraphXR Next](https://graphxrnext.kineviz.com/register)\
    • Download skel.grove and skelly.graphxr from [GitHub](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/tree/main/graphXR) folder\
-   • Create new Project in GraphXR Next\
+   • Create a new Project in GraphXR Next\
    • Open the recently created project\
    • Click on Project icon on left and then Extensions and pick Grove\
    • Click on View attached files and change into desired .csv data\
    • Drag skelly.graphxr and paste it into the background\
-   • Hold right click to rotate the Skeleton as needed\
+   • Hold right-click to rotate the Skeleton as needed\
    • Go to Settings to adjust the visualization\
    • If you want to escape into Virtual Reality World, you can put on your goggles and watch your skeleton in there
 
@@ -262,11 +262,11 @@ For this project implementation, we chose a configuration that minimizes the mat
 
 
 • **Placement of the camera**\
-    Start moving camera in different directions or angles and allow the person to start moving in space then we will be able to reconstruct the math and deal with lost frames.
+    Start moving the. camera in different directions or angles and allow the person to start moving in space then we will be able to reconstruct the math and deal with lost frames.
 
 
 • **Improve the stability**\
-    For improvinng accuracy and reliability, the Kalman filter is the best possible linear estimator in the [minimum mean-square-error](https://en.wikipedia.org/wiki/Minimum_mean_square_error) sense.
+    For improving accuracy and reliability, the Kalman filter is the best possible linear estimator in the [minimum mean-square-error](https://en.wikipedia.org/wiki/Minimum_mean_square_error) sense.
 
 
 • **Gesture Recognition in the Virtual World**\
