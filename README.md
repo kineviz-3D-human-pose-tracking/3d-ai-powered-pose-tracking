@@ -192,9 +192,10 @@ To run:
 
 ## GraphXR
 
-[GraphXR](https://www.kineviz.com/) enables graph exploration in [virtual reality (VR)](https://en.wikipedia.org/wiki/Virtual_reality). 
+[GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). 
 
-<img src="photos/skelly.png" width="300" height="200">
+[![Graph XR 3D AI Demo](https://user-images.githubusercontent.com/60201466/128616725-f2466cff-8234-403c-94d1-261a12eaa2c3.png)
+](https://www.youtube.com/watch?v=mi5JO6QNtEQ)
 
 GraphXR displays the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
 
