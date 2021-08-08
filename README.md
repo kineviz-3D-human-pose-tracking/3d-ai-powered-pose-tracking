@@ -259,16 +259,18 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 ## Future Improvement and Applications
 
 For this project implementation, we chose a configuration that minimizes the mathematical computation complexity, but it's not necessary to have this restriction.
-placement of the camera
-
-  • **placement of the camera**\
 
 
-  • **improve the stability**\
+• **Placement of the camera**\
+    Start moving camera in different directions or angles and allow the person to start moving in space then we will be able to reconstruct the math and deal with lost frames.
 
 
-  • **gesture Recognition in the Virtual World**\
-  Using **Machine Learning for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be mainly used for interactivity with different objects. Most XR is tracking from the glasses so you don't always see your hands, now with the two webcams in the front you do see your hands. So that gives the ability to immerse yourself, whether if you start seeing your hand arms in the virtual environment you actually can integrate the virtual body as if you're real body. Very natural gestures like push, pull, grab, drag can become events to be used in the interactive world. Building the model that can put different things in different places.
+• **Improve the stability**\
+    For improvinng accuracy and reliability, the Kalman filter is the best possible linear estimator in the [minimum mean-square-error](https://en.wikipedia.org/wiki/Minimum_mean_square_error) sense.
+
+
+• **Gesture Recognition in the Virtual World**\
+    For future use, we can use this project to collect **Machine Learning data for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be mainly used for interactivity with different objects. Most VR tracking is done from the glasses so users don't always see their hands.  with the two webcams in the front you do see your hands. So that gives the ability to immerse yourself, whether if you start seeing your hand arms in the virtual environment you actually can integrate the virtual body as if you're real body. Very natural gestures like push, pull, grab, drag can become events to be used in the interactive world. Building the model that can put different things in different places.
 
 
 ## Dependencies
