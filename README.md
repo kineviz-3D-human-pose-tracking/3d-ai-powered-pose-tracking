@@ -192,17 +192,17 @@ To run:
 
 ## GraphXR
 
-[GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). 
+[GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). Utilizing GraphXR, we display the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
 
 [![Graph XR 3D AI Demo](https://user-images.githubusercontent.com/60201466/128616725-f2466cff-8234-403c-94d1-261a12eaa2c3.png)
 ](https://www.youtube.com/watch?v=mi5JO6QNtEQ)
 
-GraphXR displays the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space, and provides a powerful set of tools to explore and modify the data.
+
 
 **How to run collected data in GraphXR**
 
 
-If you want to visualize the csv data you collected in 3D, you can input your data to [Kineviz GraphXR](https://www.kineviz.com/?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gQj_BLHfVHzERnLd8sHldIo0SXmMglRqNBq2CgklB5mUINKPAXDQxoCm38QAvD_BwE).
+To visualize data in 3D environment, we input CSV files to [Kineviz GraphXR](https://www.kineviz.com/?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gQj_BLHfVHzERnLd8sHldIo0SXmMglRqNBq2CgklB5mUINKPAXDQxoCm38QAvD_BwE).
 
 Follow these steps:
 
@@ -293,12 +293,12 @@ Code credits:
 
 We sincerely thank:
 * [Weidong Yang](https://www.linkedin.com/in/yangweidong/) and the [Kineviz](https://www.kineviz.com/) Team for our biweekly meetings
-* [Nikko Sacramento](https://www.linkedin.com/in/nikkosac/) for plotting the 3D skeleton in GraphXR
+* [Nikko Sacramento](https://www.linkedin.com/in/nikkosac/) for plotting the 3D skeleton in GraphXR and running the data in VR
 * Sean Li for debugging the cors issue
 * [Thom Lauret](https://www.linkedin.com/in/thomlauret/) for the more robust AWS server
 * Professor [Mario Lim](https://www.linkedin.com/in/mario-lim-243556/) for helpful crossover network connection discussions
-* [Alex Law](https://www.linkedin.com/in/alexandria-law/) for posting the blogpost
-* [Cynthia Yu](https://www.shuhuancynthiayu.com/about) for being our model.
+* [Alex Law](https://www.linkedin.com/in/alexandria-law/) for posting the blogpost and voice over
+* [Cynthia Yu](https://www.shuhuancynthiayu.com/about) for being our model
 
 ## Contact
 The code of this repository was implemented by [Barbora Novakova](mailto:barunka838@gmail.com) and [Marisa Tania](mailto:mt.marisatania@gmail.com). Feel free to reach out!
