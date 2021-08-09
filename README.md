@@ -61,13 +61,44 @@ Positioning two webcams pointed at orthogonal directions is the simplest way to 
 
 [TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. TensorFlow allows developers to create dataflow graphs—structures that describe how data moves through a graph, or a series of processing nodes. Each node in the graph represents a mathematical operation, and each connection or edge between nodes is a multidimensional data array, or tensor.
 
+**Important concepts**
+* Pose: at the highest level, PoseNet and MoveNet will return a pose object that contains a list of keypoints and an instance-level confidence score for each detected person.
 
+* Keypoint: a part of a person’s pose that is estimated, such as the nose, right ear, left knee, right foot, etc. It contains both a position and a keypoint confidence score. PoseNet and MoveNet both detects *17 keypoints*  illustrated in the following diagram.
+
+<img src="photos/keypoints.png" width="300" height="300">
+
+For each pose, it contains a confidence score of the pose and an array of keypoints. Each keypoint contains x, y, score, and name.
+
+Example output:
+
+        [
+          {
+            score: 0.8,
+            keypoints: [
+              {x: 230, y: 220, score: 0.9, name: "nose"},
+              {x: 212, y: 190, score: 0.8, name: "left_eye"},
+              ...
+            ]
+          }
+        ]
+
+**Although impressive, the pose is still in 2D.** 
+
+The goal of this project is to reconstruct 3D skeleton points using two angles of these 2D pose estimations. 
 
 ## PoseNet
 
 [Posenet](https://github.com/tensorflow/tfjs-models/tree/master/posenet) is a pre-trained machine learning library that can estimate human poses. It was released by Google Creative Lab and built on Tensorflow.js. It's powerful and fast enough to estimate human poses in real-time and works entirely in the browser. Even better, it has a relatively simple API. However, the lacking accuracy/performance was improved by the newer version MoveNet.
 
+**How to estimate keypoints with PoseNet**
 
+
+* In PoseNet you can estimate both single or multiple people. In this project we focus on estimating single poses:
+    
+            const model = await posenet.load(+modelMultiplier)
+            const pose = await model.estimateSinglePose(source);
+            
 
 ## MoveNet
 
@@ -76,11 +107,6 @@ Positioning two webcams pointed at orthogonal directions is the simplest way to 
 The [pose Animator](https://blog.tensorflow.org/2020/05/pose-animator-open-source-tool-to-bring-svg-characters-to-life.html) meshes SVG, [face landmarks detection](https://github.com/tensorflow/tfjs-models/tree/master/face-landmarks-detection), and motion capture with [pose estimation](https://www.tensorflow.org/lite/examples/pose_estimation/overview) allows [real-time human pose estimation in the browser](https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5).
 
 We encouraged you to check our [2D Webcam Pose Detection With PoseNet](https://observablehq.com/@mt-cs/posenet-webcam-1) to compare the robustness of the two pose detection models. Compared to TensorFlow's older model PoseNet, the [MoveNet model](https://storage.googleapis.com/tfjs-models/demos/pose-detection/index.html?model=movenet) has a powerful combination of speed and accuracy needed that allows an accurate depiction of difficult poses. 
-
-
-**Although impressive, the pose is still in 2D.** 
-
-For this project, we created a 3D skeleton pose displayed in [GraphXR](https://www.kineviz.com/visualization). GraphXR is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. 
 
 
 **How does MoveNet work**
@@ -98,24 +124,6 @@ There are two steps:
 
 The returned poses list contains detected poses for each individual in the image. For single-person models, there will only be one element in the list. If the model cannot detect any poses, the list will be empty.
 
-For each pose, it contains a confidence score of the pose and an array of keypoints. MoveNet both return *17 keypoints.* 
-
-<img src="photos/keypoints.png" width="300" height="300">
-
-Each keypoint contains x, y, score, and name.
-
-Example output:
-
-        [
-          {
-            score: 0.8,
-            keypoints: [
-              {x: 230, y: 220, score: 0.9, name: "nose"},
-              {x: 212, y: 190, score: 0.8, name: "left_eye"},
-              ...
-            ]
-          }
-        ]
 
 
 ## Client Side
@@ -131,13 +139,9 @@ Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates into x, y, z
 [Webcam 1](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1) | [Webcam 2](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-2) | [Receiver 3D](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-receiver)
 
-
-    
 ## Server Side
 
-Browsers running on multiple devices will be connected using **Socket.IO.**
-
-[Socket.IO](https://socket.io/docs/v4/index.html) is a library that enables real-time, bidirectional, and event-based communication between the browser and the server.
+Browsers running on multiple devices will be connected using **Socket.IO.** [Socket.IO](https://socket.io/docs/v4/index.html) is a library that enables real-time, bidirectional, and event-based communication between the browser and the server.
 
 Socket.IO is **NOT** a WebSocket implementation. Although Socket.IO indeed uses WebSocket as transport when possible, it adds additional metadata to each packet. That is why a WebSocket client will not be able to successfully connect to a Socket.IO server, and a Socket.IO client will not be able to connect to a plain WebSocket server either.
 
@@ -202,11 +206,10 @@ To run:
 
 ## GraphXR
 
-[GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). Utilizing GraphXR, we display the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space and provides a powerful set of tools to explore and modify the data.
+[GraphXR](https://www.kineviz.com/visualization) is a browser-based visualization tool that brings unprecedented speed, power, and flexibility to the exploration of data in 2D and XR. [GraphXR](https://www.kineviz.com/) enables graph exploration in virtual reality (VR). Utilizing GraphXR, we display the combined two webcam streams as a 3D skeleton of **nodes** that are connected by **edges** in an interactive virtual 3D graph space and provides a powerful set of tools to explore and modify the data.
 
 [![Graph XR 3D AI Demo](https://user-images.githubusercontent.com/60201466/128616725-f2466cff-8234-403c-94d1-261a12eaa2c3.png)
 ](https://www.youtube.com/watch?v=mi5JO6QNtEQ)
-
 
 
 **How to run collected data in GraphXR**
@@ -230,8 +233,6 @@ Follow these steps:
 
   
 Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/128306293-05b63fce-02df-4850-b2de-71b35a593f3f.mp4)** for more details. 
-
-
 
 
 
