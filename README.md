@@ -22,7 +22,9 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
   * [Description](#description)
     * [Setup](#setup)
     * [Architectural Diagram](#architectural-diagram)
+    * [TensorFlow](#tensorflow)
     * [MoveNet](#movenet)
+    * [PoseNet](#posenet)
     * [Client Side](#client-side)
     * [Server Side](#server-side)
   * [Installation](#installation)
@@ -55,7 +57,10 @@ Positioning two webcams pointed at orthogonal directions is the simplest way to 
 
 <img src="photos/architectural_diagram.png" width="700" height="600">
 
- 
+## TensorFlow
+
+[TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. TensorFlow allows developers to create dataflow graphs—structures that describe how data moves through a graph, or a series of processing nodes. Each node in the graph represents a mathematical operation, and each connection or edge between nodes is a multidimensional data array, or tensor.
+
 ## MoveNet
 
 [MoveNet Model](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/movenet) is the latest pre-trained machine learning library [released](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html) by [TensorFlow](https://www.tensorflow.org) team, as part of a larger [Pose Detection](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection) [TensorFlow.js models](https://www.tensorflow.org/js/models) set. MoveNet is a convolutional neural network model that runs on RGB images and predicts human joint locations of a single person that runs faster than real-time ([30+ FPS](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)).
@@ -105,7 +110,9 @@ Example output:
         ]
 
 
+## PoseNet
 
+[Posenet](https://github.com/tensorflow/tfjs-models/tree/master/posenet) is a pre-trained machine learning library that can estimate human poses. It was released by Google Creative Lab, and built on Tensorflow.js. It's powerful and fast enough to estimate human poses in real time, and works entirely in the browser. Even better, it has a relatively simple API.
 
 
 ## Client Side
