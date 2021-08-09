@@ -281,16 +281,16 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 For this project implementation, we chose a configuration that minimizes the mathematical computation complexity, but it's not necessary to have this restriction.
 
 • **Placement of the camera**\
-    The next step is to move away from the orthogonal webcams placement, we can experimenting placing the camera in different angles and reconstruct Z point using epipolar geometry. We can deal with lost frames using time-domain filter to improve the accuracy and precision.
+    The next step is to move away from the orthogonal placement of the webcams, we can experimenting placing the camera in different angles and reconstruct the Z point using epipolar geometry. We can deal with lost frames using the time-domain filter to improve accuracy and precision.
 
 • **Improve the stability**\
-    For improving accuracy and reliability, the [Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter) is one of the most commonly used linear estimator [minimum mean-square-error](https://en.wikipedia.org/wiki/Minimum_mean_square_error).
+    For improving accuracy and reliability, the [Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter) is one of the most commonly used linear estimators [minimum mean-square-error](https://en.wikipedia.org/wiki/Minimum_mean_square_error).
 
 • **Directly connect Receiver to GraphXR**\
-    In this project we collect data in CSV before we input them to GraphXR for development and analysis purposes. For future improvements, we can stream data from the receiver directly to Kineviz GraphXR in [Grove](https://www.kineviz.com/grovesample) using Socket.IO.By doing this step, we can open up potential gesture control to interact with data in the 3D virtual environment, as explained below.
+    In this project, we collect data in CSV before we input them to GraphXR for development and analysis purposes. For future improvements, we can stream data from the receiver directly to Kineviz GraphXR in [Grove](https://www.kineviz.com/grovesample) using Socket.IO. By doing this step, we can open up potential gesture control to interact with data in the 3D virtual environment, as explained below.
 
 • **Gesture Recognition in the Virtual World**\
-    We can use this project to collect **Machine Learning data for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be used for interactivity with different objects. Most Extended Reality (XR) tracking is done from the glasses so often users do not see their hands.  with the two webcams placement in the front users, we can see hand and full-body gestures. This gives the ability to immerse ourself in the virtual environment and integrate the virtual body with the real body. Recognizing simple natural gestures like push, pull, grab, drag can be a game changer in interactivity in XR.
+    We can use this project to collect **Machine Learning data for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be used for interactivity with different objects. Most Extended Reality (XR) tracking is done from the glasses so often users do not see their hands.  with the two webcams placement in the front users, we can see the hand and full-body gestures. This gives us the ability to immerse ourselves in the virtual environment and integrate the virtual body with the real body. Recognizing simple natural gestures like push, pull, grab, drag can be a game-changer in interactivity in XR.
 
 
 ## Dependencies
