@@ -270,17 +270,17 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 
 For this project implementation, we chose a configuration that minimizes the mathematical computation complexity, but it's not necessary to have this restriction.
 
-
 • **Placement of the camera**\
-    Start moving the. camera in different directions or angles and allow the person to start moving in space then we will be able to reconstruct the math and deal with lost frames.
-
+    The next step is to move away from the orthogonal webcams placement, we can experimenting placing the camera in different angles and reconstruct Z point using epipolar geometry. We can deal with lost frames using time-domain filter to improve the accuracy and precision.
 
 • **Improve the stability**\
-    For improving accuracy and reliability, the Kalman filter is the best possible linear estimator in the [minimum mean-square-error](https://en.wikipedia.org/wiki/Minimum_mean_square_error) sense.
+    For improving accuracy and reliability, the [Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter) is one of the most commonly used linear estimator [minimum mean-square-error](https://en.wikipedia.org/wiki/Minimum_mean_square_error).
 
+• **Directly connect Receiver to GraphXR**\
+    In this project we collect data in CSV before we input them to GraphXR for development and analysis purposes. For future improvements, we can stream data from the receiver directly to Kineviz GraphXR in [Grove](https://www.kineviz.com/grovesample) inhttps://www.kineviz.com/grovesample using Socket.IO.By doing this step, we can open up potential gesture control to interact with data in the 3D virtual environment, as explained below.
 
 • **Gesture Recognition in the Virtual World**\
-    For future use, we can use this project to collect **Machine Learning data for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be mainly used for interactivity with different objects. Most VR tracking is done from the glasses so users don't always see their hands.  with the two webcams in the front you do see your hands. So that gives the ability to immerse yourself, whether if you start seeing your hand arms in the virtual environment you actually can integrate the virtual body as if you're real body. Very natural gestures like push, pull, grab, drag can become events to be used in the interactive world. Building the model that can put different things in different places.
+    We can use this project to collect **Machine Learning data for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be used for interactivity with different objects. Most Extended Reality (XR) tracking is done from the glasses so often users do not see their hands.  with the two webcams placement in the front users, we can see hand and full-body gestures. This gives the ability to immerse ourself in the virtual environment and integrate the virtual body with the real body. Recognizing simple natural gestures like push, pull, grab, drag can be a game changer in interactivity in XR.
 
 
 ## Dependencies
