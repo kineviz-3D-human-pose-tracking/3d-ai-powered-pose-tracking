@@ -44,6 +44,8 @@ Whether it's for games, motion analysis in health and fitness, virtual reality d
  
 The long-term goal of this project is to interact in the VR world without controllers or wearables. By detecting 3D gestures in non-costly ways, we hope to reduce the need for body trackers, hardware usage, and also computational power and make 3D interaction in VR more accessible. Full-body tracking for skeletal animation allows for more user expression that could humanize users in the VR world. There are endless use cases including hand motion interaction with data, video games, and virtual meetings in 3D.
 
+[![AI Powered 3D Human Pose Tracking and Analysis](https://user-images.githubusercontent.com/60201466/128764309-bbcc80df-d393-4192-9d3a-c90e4de8cfec.png)](https://www.youtube.com/watch?v=qVdNwlup_ZQ)
+
 ## Setup
 
 Positioning two webcams pointed at orthogonal directions is the simplest way to combine the two 2D poses into a single 3D pose stream. Both cameras are placed at a 90 degrees angle to get the ***x, y, z coordinates*** for plotting in  [Three-dimensional space](https://en.wikipedia.org/wiki/Three-dimensional_space).
