@@ -276,7 +276,7 @@ Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/
 
 
 
-## Future Improvement and Applications
+## Future Improvements and Applications
 
 For this project implementation, we chose a configuration that minimizes the mathematical computation complexity, but it's not necessary to have this restriction.
 
