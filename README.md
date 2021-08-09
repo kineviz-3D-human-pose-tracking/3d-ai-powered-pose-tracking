@@ -40,7 +40,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
 
 ## Description
 
-Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements be captured digitally in 3D in real-time. Until now, this was possible only with expensive systems using multiple cameras and/or by having people wear special suits and tracking points or tracking devices. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D poses by just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([MoveNet](https://blog.tensorflow.org/2021/05/next-generation-pose-detection-with-movenet-and-tensorflowjs.html)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
+Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements be captured digitally in 3D in real-time. Until now, this was possible only with expensive systems using multiple cameras and/or by having people wear special suits and tracking points or tracking devices. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D poses by just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([PoseNet](https://github.com/tensorflow/tfjs-models/tree/master/posenet)/ [MoveNet](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/movenet)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
  
 The long-term goal of this project is to interact in the VR world without controllers or wearables. By detecting 3D gestures in non-costly ways, we hope to reduce the need for body trackers, hardware usage, and also computational power and make 3D interaction in VR more accessible. Full-body tracking for skeletal animation allows for more user expression that could humanize users in the VR world. There are endless use cases including hand motion interaction with data, video games, and virtual meetings in 3D.
 
@@ -128,11 +128,19 @@ The returned poses list contains detected poses for each individual in the image
 
 ## Client Side
 
-The development of the clients is done on [ObservableHQ](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1). It is the notebook paradigm to JavaScript projects. (for those of you familiar with Jupyter notebooks, this is the [equivalent with JavaScript](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/) instead of Python).
+The development of the clients is done on [ObservableHQ](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1). It is the notebook paradigm to [JavaScript projects](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/).
 
 Two notebook webcams are equivalent to one another, which emit data to the server. The third ObservableHQ notebook is the receiver that takes in both webcams data from the server.
 
 ## Links To ObservableHQ Notebooks
+
+**PoseNet**
+Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
+------------ | ------------- | -------------
+Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates into x, y, z
+[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1) | [Webcam 2](https://observablehq.com/@mt-cs/posenet-webcam-2) | [Receiver 3D](https://observablehq.com/@mt-cs/posenet-receiver)
+
+**MoveNet**
 
 Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 ------------ | ------------- | -------------
@@ -143,17 +151,18 @@ Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates int
 
 Browsers running on multiple devices will be connected using **Socket.IO.** [Socket.IO](https://socket.io/docs/v4/index.html) is a library that enables real-time, bidirectional, and event-based communication between the browser and the server.
 
-Socket.IO is **NOT** a WebSocket implementation. Although Socket.IO indeed uses WebSocket as transport when possible, it adds additional metadata to each packet. That is why a WebSocket client will not be able to successfully connect to a Socket.IO server, and a Socket.IO client will not be able to connect to a plain WebSocket server either.
+Socket.IO is **NOT** a WebSocket implementation. The Socket.IO client is a “slight” wrapper around the WebSocket API. Although Socket.IO indeed uses WebSocket as transport when possible, it adds additional metadata to each packet. That is why a WebSocket client will not be able to successfully connect to a Socket.IO server, and a Socket.IO client will not be able to connect to a plain WebSocket server either.
 
 **How does that work?**
 
-The client will try to establish a [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) connection if possible and will fall back on HTTP long-polling if not.
-
-WebSocket is a communication protocol that provides a full-duplex and low-latency channel between the server and the browser. More information can be found [here](https://en.wikipedia.org/wiki/WebSocket).
-
 Please see the documentation for **socket.io** [here](https://socket.io/docs/v4/index.html)
 
-Socket.io enables real-time bidirectional event-based communication.
+Socket.IO is a library that enables real-time, bidirectional, and event-based communication between the browser and the server. It is divided into two parts:
+* Server-Side: it is a Node.js server
+* Client-Side: it is a Javascript client library for the browser (which can be also run from Node.js), In this project the client is both webcam 1 and webcam 2 ObservableHQ notebook.
+
+The client will try to establish a [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) connection if possible and will fall back on HTTP long-polling if not. WebSocket is a communication protocol that provides a full-duplex and low-latency channel between the server and the browser. More information can be found [here](https://en.wikipedia.org/wiki/WebSocket).
+
 
 -  **index.js** server (this repository)
 
