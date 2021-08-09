@@ -40,7 +40,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
 
 ## Description
 
-Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements be captured digitally in 3D in real-time. Until now, this was possible only with expensive systems using multiple cameras and/or by having people wear special suits and tracking points or tracking devices. With the AI power of MoveNet and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D poses by just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([PoseNet](https://github.com/tensorflow/tfjs-models/tree/master/posenet)/ [MoveNet](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/movenet)) supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
+Whether it's for games, motion analysis in health and fitness, virtual reality development, or medical examinations, many applications require that people and their movements be captured digitally in 3D in real-time. Until now, this was possible only with expensive systems using multiple cameras and/or by having people wear special suits and tracking points or tracking devices. With the AI power and combining multi-device data streams through Socket.io, this project offers the possibility of turn smartphones and webcams into a multi-view body tracking system without using any trackers. We present an affordable solution to detect 3D poses by just using two webcams. The latest development in using deep learning for pose estimation has impressive stability, speed, and tolerance to occlusion. This project uses Pose Detection API ([PoseNet](https://github.com/tensorflow/tfjs-models/tree/master/posenet)/ [MoveNet](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection/src/movenet)) that supports multiple models for running real-time pose estimation by simply estimating where key body joints are. By positioning two webcams, pointed at orthogonal directions, we can combine the two 2D poses into a single 3D pose stream. Traditional 3D motion capture systems require a sophisticated setup and are very costly, hence the multi-webcam system makes 3D pose capture accessible by many more people.
 
 [![AI Powered 3D Human Pose Tracking and Analysis](https://user-images.githubusercontent.com/60201466/128764309-bbcc80df-d393-4192-9d3a-c90e4de8cfec.png)](https://www.youtube.com/watch?v=qVdNwlup_ZQ)
 
@@ -61,7 +61,7 @@ Positioning two webcams pointed at orthogonal directions is the simplest way to 
 
 ## TensorFlow
 
-[TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. TensorFlow allows developers to create dataflow graphs—structures that describe how data moves through a graph, or a series of processing nodes. Each node in the graph represents a mathematical operation, and each connection or edge between nodes is a multidimensional data array, or tensor.
+[TensorFlow](https://www.tensorflow.org/) is an end-to-end open-source platform for machine learning. TensorFlow allows developers to create dataflow graphs—structures that describe how data moves through a graph, or a series of processing nodes. Each node in the graph represents a mathematical operation, and each connection or edge between nodes is a multidimensional data array or tensor.
 
 **Important concepts**
 * Pose: at the highest level, PoseNet and MoveNet will return a pose object that contains a list of keypoints and an instance-level confidence score for each detected person.
@@ -93,7 +93,7 @@ The goal of this project is to reconstruct 3D skeleton points using two angles o
 
 [Posenet](https://github.com/tensorflow/tfjs-models/tree/master/posenet) is a pre-trained machine learning library that can estimate human poses. It was released by Google Creative Lab and built on Tensorflow.js. It's powerful and fast enough to estimate human poses in real-time and works entirely in the browser. Even better, it has a relatively simple API. However, the lacking accuracy/performance was improved by the newer version MoveNet.
 
-**How to estimate keypoints with PoseNet**
+**How to estimate skeleton key points with PoseNet**
 
 
 * In PoseNet you can estimate both single or multiple people. In this project we focus on estimating single poses:
@@ -130,24 +130,27 @@ The returned poses list contains detected poses for each individual in the image
 
 ## Client Side
 
-The development of the clients is done on [ObservableHQ](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1). It is the notebook paradigm to [JavaScript projects](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/).
+The development of the clients is done on [ObservableHQ](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1). It is the notebook paradigm for [JavaScript projects](https://codewithhugo.com/observablehq-notebooks-for-javascript-demos-and-prototypes/).
 
 Two notebook webcams are equivalent to one another, which emit data to the server. The third ObservableHQ notebook is the receiver that takes in both webcams data from the server.
 
 ## Links To ObservableHQ Notebooks
 
-**PoseNet**
-Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
------------- | ------------- | -------------
-Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates into x, y, z
-[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1) | [Webcam 2](https://observablehq.com/@mt-cs/posenet-webcam-2) | [Receiver 3D](https://observablehq.com/@mt-cs/posenet-receiver)
 
 **MoveNet**
 
 Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
 ------------ | ------------- | -------------
-Captrures coordinates x, y | Capture coordinates x, y | Combines coordinates into x, y, z
+Captures coordinates x, y | Captures coordinates x, y | Combines coordinates into x, y, z
 [Webcam 1](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-1) | [Webcam 2](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-webcam-2) | [Receiver 3D](https://observablehq.com/@mt-cs/movenet-3d-pose-tracking-receiver)
+
+**PoseNet**
+
+Stream from webcam 1 | Stream from webcam 2 | Receiver 3D
+------------ | ------------- | -------------
+Captures coordinates x, y | Captures coordinates x, y | Combines coordinates into x, y, z
+[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1) | [Webcam 2](https://observablehq.com/@mt-cs/posenet-webcam-2) | [Receiver 3D](https://observablehq.com/@mt-cs/posenet-receiver)
+
 
 ## Server Side
 
@@ -230,7 +233,7 @@ To visualize data in 3D environment, we input CSV files to [Kineviz GraphXR](htt
 
 Follow these steps:
 
-   • Create account on [GraphXR Next](https://graphxrnext.kineviz.com/register)\
+   • Create an account on [GraphXR Next](https://graphxrnext.kineviz.com/register)\
    • Download skel.grove and skelly.graphxr from [GitHub](https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/tree/main/graphXR) folder\
    • Create a new Project in GraphXR Next\
    • Open the recently created project\
@@ -243,7 +246,7 @@ Follow these steps:
 
 
   
-Watch full Tutorial **[here](https://user-images.githubusercontent.com/55717978/128306293-05b63fce-02df-4850-b2de-71b35a593f3f.mp4)** for more details. 
+Watch the full Tutorial **[here](https://user-images.githubusercontent.com/55717978/128306293-05b63fce-02df-4850-b2de-71b35a593f3f.mp4)** for more details. 
 
 
 
