@@ -23,8 +23,8 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
     * [Setup](#setup)
     * [Architectural Diagram](#architectural-diagram)
     * [TensorFlow](#tensorflow)
-    * [MoveNet](#movenet)
     * [PoseNet](#posenet)
+    * [MoveNet](#movenet)
     * [Client Side](#client-side)
     * [Server Side](#server-side)
   * [Installation](#installation)
@@ -60,6 +60,14 @@ Positioning two webcams pointed at orthogonal directions is the simplest way to 
 ## TensorFlow
 
 [TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. TensorFlow allows developers to create dataflow graphs—structures that describe how data moves through a graph, or a series of processing nodes. Each node in the graph represents a mathematical operation, and each connection or edge between nodes is a multidimensional data array, or tensor.
+
+
+
+## PoseNet
+
+[Posenet](https://github.com/tensorflow/tfjs-models/tree/master/posenet) is a pre-trained machine learning library that can estimate human poses. It was released by Google Creative Lab and built on Tensorflow.js. It's powerful and fast enough to estimate human poses in real-time and works entirely in the browser. Even better, it has a relatively simple API. However, the lacking accuracy/performance was improved by the newer version MoveNet.
+
+
 
 ## MoveNet
 
@@ -108,11 +116,6 @@ Example output:
             ]
           }
         ]
-
-
-## PoseNet
-
-[Posenet](https://github.com/tensorflow/tfjs-models/tree/master/posenet) is a pre-trained machine learning library that can estimate human poses. It was released by Google Creative Lab, and built on Tensorflow.js. It's powerful and fast enough to estimate human poses in real time, and works entirely in the browser. Even better, it has a relatively simple API.
 
 
 ## Client Side
