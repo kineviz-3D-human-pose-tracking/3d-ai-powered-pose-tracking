@@ -31,7 +31,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
   * [Usage](#usage)
   * [Tests](#tests)
   * [GraphXR](#graphXR)
-  * [Demo](#demo)
+  * [Demo Tutorial](#demo-tutorial)
   * [Future Improvements and Applications](#future-application)
   * [Dependencies](#dependencies)
   * [Credits](#credits)
@@ -272,7 +272,7 @@ Watch the full Tutorial **[here](https://user-images.githubusercontent.com/55717
    
 
 
-## Demo
+## Demo Tutorial
 
 
 [![Running AI Powered 3D Human Pose Tracking and Analysis](https://user-images.githubusercontent.com/60201466/128557336-dffa8da8-42e3-4427-bfdf-ca1dedf14a5c.png)](https://youtu.be/Kue8udG9MhI)
