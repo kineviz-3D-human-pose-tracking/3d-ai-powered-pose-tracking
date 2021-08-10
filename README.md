@@ -50,7 +50,6 @@ The long-term goal of this project is to interact in the VR world without contro
 
 Positioning two webcams pointed at orthogonal directions is the simplest way to combine the two 2D poses into a single 3D pose stream. Both cameras are placed at a 90 degrees angle to get the ***x, y, z coordinates*** for plotting in  [Three-dimensional space](https://en.wikipedia.org/wiki/Three-dimensional_space).
 
-*For more information about the proper **camera setup** check [Webcam Notebook](https://observablehq.com/d/823f2f9c4daa588c).*
 ![camera_setup](https://user-images.githubusercontent.com/60201466/127975106-a2da261d-1176-49de-8147-e800477b9523.png)
 
 
