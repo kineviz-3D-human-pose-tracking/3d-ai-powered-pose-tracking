@@ -33,6 +33,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
   * [GraphXR](#graphXR)
   * [Demo Tutorial](#demo-tutorial)
   * [Future Improvements and Applications](#future-application)
+  * [CORS](#cors)
   * [Dependencies](#dependencies)
   * [Credits](#credits)
   * [Acknowledgments](#acknowledgments)
@@ -295,6 +296,43 @@ For this project implementation, we chose a configuration that minimizes the mat
 
 • **Gesture Recognition in the Virtual World**\
     We can use this project to collect **Machine Learning data for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be used for interactivity with different objects. Most Extended Reality (XR) tracking is done from the glasses so often users do not see their hands.  with the two webcams placement in the front users, we can see the hand and full-body gestures. This gives us the ability to immerse ourselves in the virtual environment and integrate the virtual body with the real body. Recognizing simple natural gestures like push, pull, grab, drag can be a game-changer in interactivity in XR.
+
+
+## CORS
+
+First, we implemented this project locally, however when we added our IP domain we started  to dealing with issue related 
+Cross Origin Resources Sharing Policy Issues.
+
+
+Cross-Origin Resource Sharing [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) represent an HTTP-header based mechanism that let a server to indicate any origins (domain/port) other than its own. 
+
+
+For solving the CORS issues:
+
+1. install the cors package
+
+       # npm install cors
+
+2.  require and use cors
+
+        const cors = require('cors')
+        const app = express()
+        const port = process.env.PORT || 3333
+
+        app.use(cors())
+
+3. use  the same https instance with io
+
+       const httpsServer =  https.createServer({
+         key: fs.readFileSync('privkey.pem'),
+         cert: fs.readFileSync('fullchain.pem'),
+         // ca: fs.readFileSync('./test_ca.crt'),
+         requestCert: false,
+         rejectUnauthorized: false
+       }, app).listen(port, () => console.log('listening on port ' + port));
+
+       const io = require("socket.io")(httpsServer); //not https module, it should be use https instance
+
 
 
 ## Dependencies
