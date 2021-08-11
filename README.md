@@ -228,7 +228,7 @@ To run:
 **How to run collected data in GraphXR**
 
 
-To visualize data in 3D environment, we input CSV files to [Kineviz GraphXR](https://www.kineviz.com/?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gQj_BLHfVHzERnLd8sHldIo0SXmMglRqNBq2CgklB5mUINKPAXDQxoCm38QAvD_BwE).
+To visualize data in a 3D environment, we input CSV files to [Kineviz GraphXR](https://www.kineviz.com/?gclid=CjwKCAjwmK6IBhBqEiwAocMc8gQj_BLHfVHzERnLd8sHldIo0SXmMglRqNBq2CgklB5mUINKPAXDQxoCm38QAvD_BwE).
 
 Follow these steps:
 
