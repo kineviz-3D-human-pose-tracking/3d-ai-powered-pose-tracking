@@ -30,8 +30,8 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
   * [Installation](#installation)
   * [Usage](#usage)
   * [Launch a Linux Virtual Machine](#Launch-a-Linux-Virtual-Machine)
-  * [Tests](#tests)
   * [Client-Server Network](#client-server-network)
+  * [Tests](#tests)
   * [GraphXR](#graphXR)
   * [Demo Tutorial](#demo-tutorial)
   * [Future Improvements and Applications](#future-application)
@@ -210,17 +210,6 @@ VM allow you to reduce overhead, with multiple systems operating from the same c
 
 For more information how to set up the VM that is hosted by AWS follow AWS Quick Start Guide [Launch a Linux Virtual Machine](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/welcome.html)
    
-## Tests
-
-**How to Test**
-
-[Mocha](https://mochajs.org/) is a feature-rich JavaScript test framework running on [Node.js](https://nodejs.org/en/) and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting while mapping uncaught exceptions to the correct test cases. Hosted on [GitHub](https://github.com/mochajs/mocha).
-
-To run:
-
-        $ npm test
-    
-*More information about Mocha you can find [here](https://mochajs.org/)*
    
 ## Client-Server Network
 
@@ -254,6 +243,21 @@ To add CORS dependency on Node.js server:
        }, app).listen(port, () => console.log('listening on port ' + port));
 
        const io = require("socket.io")(httpsServer); //not https module, it should be use https instance
+
+
+
+## Tests
+
+**How to Test**
+
+[Mocha](https://mochajs.org/) is a feature-rich JavaScript test framework running on [Node.js](https://nodejs.org/en/) and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting while mapping uncaught exceptions to the correct test cases. Hosted on [GitHub](https://github.com/mochajs/mocha).
+
+To run:
+
+        $ npm test
+    
+*More information about Mocha you can find [here](https://mochajs.org/)*
+
 
 
 ## GraphXR
