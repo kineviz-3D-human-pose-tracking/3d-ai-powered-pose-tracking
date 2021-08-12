@@ -182,10 +182,6 @@ The client will try to establish a [WebSocket](https://developer.mozilla.org/en-
 Install npm before running index.jx:
 
         $ npm install
-       
-        $ npm install socket.io
-       
-        $ npm install express
 
         $ npm install --global mocha
     
@@ -204,11 +200,13 @@ to start the server in the terminal and you should get a confirmation response
 
    *listening on port 9000* 
 
-## Launch a Linux Virtual Machine
+## Local Host vs. Virtual Machine
+
+In our clients, you can change the URL to LocalHost with port of your choice (make sure to update server's URL & port as needed) to first test out the fuctionality of this project. However, in order to combine the two webcams, we created an [Ubuntu Virtual Machine on AWS](https://ubuntu.com/aws).
 
 Creating a VM makes it possible to allow multiple systems operating from the same console at the same time with less overhead. More over it allows the separation of software from the physical host computer. It is necessary to have at least **8 GB of RAM available** on your VM for running this project. 
 
-For more information how to set up the VM that is hosted by AWS follow AWS Quick Start Guide [Launch a Linux Virtual Machine](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/welcome.html)
+For more information how to set up the VM that is hosted by AWS follow this tutorial [Launch an Ubuntu Linux Virtual Machine](https://techexpert.tips/amazon-aws/ec2-ubuntu-linux-virtual-machine/)
    
    
 ## Client-Server Network
@@ -221,11 +219,7 @@ Our clients-side are running on ObservableHQ that was loaded over HTTPS. Firstly
 
 To add CORS dependency on Node.js server:
 
-1. Install the cors package
-
-       # npm install cors
-
-2. Require and use cors
+1. Using CORS in index.js
 
         const cors = require('cors')
         const app = express()
@@ -233,7 +227,7 @@ To add CORS dependency on Node.js server:
 
         app.use(cors())
 
-3. Use the same https instance with io and add your certificates when creating server
+2. Use the same https instance with io and add your certificates when creating server in index.js
 
        const httpsServer =  https.createServer({
          key: fs.readFileSync('privkey.pem'),
