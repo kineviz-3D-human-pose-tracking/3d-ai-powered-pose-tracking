@@ -4,7 +4,7 @@
   "description": "Socket server for users collaboration on web applications",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio"
+    "url": "https://github.com/kineviz-3D-human-pose-tracking/streamer-receiver-socketio/"
   },
   "main": "index.js",
   "scripts": {
@@ -14,15 +14,19 @@
     "release": "standard-version"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "socket.io": "^2.4.1"
+    "socket.io": "^2.4.1",
+    "supertest": "^6.1.4"
   },
   "engines": {
     "node": ">=12.13.1 <13"
   },
   "devDependencies": {
+    "chai": "^4.3.4",
     "heroku": "^7.35.1",
     "husky": "^4.0.10",
+    "mocha": "^9.0.3",
     "prettier": "~1.19.1",
     "pretty-quick": "~2.0.1",
     "ws": "3.3.2"
