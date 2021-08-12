@@ -29,6 +29,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
     * [Server Side](#server-side)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Launch a Linux Virtual Machine](#Launch-a-Linux-Virtual-Machine)
   * [Tests](#tests)
   * [Client-Server Network](#client-server-network)
   * [GraphXR](#graphXR)
