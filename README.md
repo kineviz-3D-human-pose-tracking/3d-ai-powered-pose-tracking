@@ -202,7 +202,12 @@ Simply run
 to start the server in the terminal and you should get a confirmation response 
 
    *listening on port 9000* 
-   
+
+## Launch a Linux Virtual Machine
+
+VM allow you to reduce overhead, with multiple systems operating from the same console at the same time. More over it allow the separation of software  from the physical host computer. It is necessary to have at least **8 GB of RAM available** on your VM for running the server for this project. 
+
+For more information how to set up the VM that is hosted by AWS follow AWS Quick Start Guide [Launch a Linux Virtual Machine](https://docs.aws.amazon.com/quickstarts/latest/vmlaunch/welcome.html)
    
 ## Tests
 
