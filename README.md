@@ -30,10 +30,10 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
   * [Installation](#installation)
   * [Usage](#usage)
   * [Tests](#tests)
+  * [CORS](#cors)
   * [GraphXR](#graphXR)
   * [Demo Tutorial](#demo-tutorial)
   * [Future Improvements and Applications](#future-application)
-  * [CORS](#cors)
   * [Dependencies](#dependencies)
   * [Credits](#credits)
   * [Acknowledgments](#acknowledgments)
@@ -216,6 +216,39 @@ To run:
     
 *More information about Mocha you can find [here](https://mochajs.org/)*
    
+## CORS
+
+To share data from multiple devices we need to add Cross-Origin Resource Sharing [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to our dependancy. CORS represents an HTTP-header based mechanism that let a server to indicate any origins (domain/port) other than its own. 
+
+Our clients-side are running on ObservableHQ that was loaded over HTTPS. Firstly to force connection from HTTP to HTTPS, we need to get [Let's Encrypt Certificate](https://letsencrypt.org/docs/) to obtain a browser-trusted certificate and validate our VM domain.
+
+![howitworks_challenge](https://user-images.githubusercontent.com/60201466/129121970-1a830ec4-f762-4e05-b544-3f990a1d545c.png)
+
+To add CORS dependency on Node.js server:
+
+1. Install the cors package
+
+       # npm install cors
+
+2. Require and use cors
+
+        const cors = require('cors')
+        const app = express()
+        const port = process.env.PORT || 3333
+
+        app.use(cors())
+
+3. Use  the same https instance with io
+
+       const httpsServer =  https.createServer({
+         key: fs.readFileSync('privkey.pem'),
+         cert: fs.readFileSync('fullchain.pem'),
+         // ca: fs.readFileSync('./test_ca.crt'),
+         requestCert: false,
+         rejectUnauthorized: false
+       }, app).listen(port, () => console.log('listening on port ' + port));
+
+       const io = require("socket.io")(httpsServer); //not https module, it should be use https instance
 
 
 ## GraphXR
@@ -279,8 +312,6 @@ Watch the full Tutorial **[here](https://user-images.githubusercontent.com/55717
 [![Running AI Powered 3D Human Pose Tracking and Analysis](https://user-images.githubusercontent.com/60201466/128557336-dffa8da8-42e3-4427-bfdf-ca1dedf14a5c.png)](https://youtu.be/Kue8udG9MhI)
 
 
-
-
 ## Future Improvements and Applications
 
 For this project implementation, we chose a configuration that minimizes the mathematical computation complexity, but it's not necessary to have this restriction.
@@ -296,42 +327,6 @@ For this project implementation, we chose a configuration that minimizes the mat
 
 • **Gesture Recognition in the Virtual World**\
     We can use this project to collect **Machine Learning data for Gesture Recognition** and be able to use those gestures in the **Virtual Environment**. Gestures can be used for interactivity with different objects. Most Extended Reality (XR) tracking is done from the glasses so often users do not see their hands.  with the two webcams placement in the front users, we can see the hand and full-body gestures. This gives us the ability to immerse ourselves in the virtual environment and integrate the virtual body with the real body. Recognizing simple natural gestures like push, pull, grab, drag can be a game-changer in interactivity in XR.
-
-
-## CORS
-
-First, we implemented this project locally, however when we added our IP domain we started  to dealing with issue related 
-Cross Origin Resources Sharing Policy Issues.
-
-
-Cross-Origin Resource Sharing [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) represent an HTTP-header based mechanism that let a server to indicate any origins (domain/port) other than its own. 
-
-
-For solving the CORS issues:
-
-1. install the cors package
-
-       # npm install cors
-
-2.  require and use cors
-
-        const cors = require('cors')
-        const app = express()
-        const port = process.env.PORT || 3333
-
-        app.use(cors())
-
-3. use  the same https instance with io
-
-       const httpsServer =  https.createServer({
-         key: fs.readFileSync('privkey.pem'),
-         cert: fs.readFileSync('fullchain.pem'),
-         // ca: fs.readFileSync('./test_ca.crt'),
-         requestCert: false,
-         rejectUnauthorized: false
-       }, app).listen(port, () => console.log('listening on port ' + port));
-
-       const io = require("socket.io")(httpsServer); //not https module, it should be use https instance
 
 
 
