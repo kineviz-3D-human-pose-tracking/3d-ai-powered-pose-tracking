@@ -238,12 +238,11 @@ To add CORS dependency on Node.js server:
 
         app.use(cors())
 
-3. Use  the same https instance with io
+3. Use the same https instance with io and add your certificates when creating server
 
        const httpsServer =  https.createServer({
          key: fs.readFileSync('privkey.pem'),
          cert: fs.readFileSync('fullchain.pem'),
-         // ca: fs.readFileSync('./test_ca.crt'),
          requestCert: false,
          rejectUnauthorized: false
        }, app).listen(port, () => console.log('listening on port ' + port));
