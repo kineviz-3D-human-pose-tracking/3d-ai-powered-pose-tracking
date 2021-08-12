@@ -30,7 +30,7 @@ PoseNet: [[Webcam 1](https://observablehq.com/@mt-cs/posenet-webcam-1)]
   * [Installation](#installation)
   * [Usage](#usage)
   * [Tests](#tests)
-  * [CORS](#cors)
+  * [Client-Server Network](#client-server-network)
   * [GraphXR](#graphXR)
   * [Demo Tutorial](#demo-tutorial)
   * [Future Improvements and Applications](#future-application)
@@ -216,7 +216,7 @@ To run:
     
 *More information about Mocha you can find [here](https://mochajs.org/)*
    
-## CORS
+## Client-Server Network
 
 To share data from multiple devices we need to add Cross-Origin Resource Sharing [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to our dependancy. CORS represents an HTTP-header based mechanism that let a server to indicate any origins (domain/port) other than its own. 
 
